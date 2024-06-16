@@ -215,8 +215,8 @@ const responsive = {
    </div>
   </div>
   {/* CELULAR */}
-  <div className='lg:hidden w-full h-auto  flex flex-col'>
-  <div className='w-full h-screen flex flex-col items-center'>
+  <div className='w-full h-screen lg:hidden flex justify-center'>
+ 
   <img  src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/Te%20invitamos%20a%20nuestro%20matrimonio%20(2).jpg?alt=media&token=cd12b5be-8fe1-406f-8458-0d874ae70461" alt="" />
   <img className='absolute w-[13rem] top-[8%] right-[22.5%] animate-fade-up animate-once' src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/foto2.png?alt=media&token=61a84617-9790-45dd-90bb-ae7230506466" alt="" />
   <div className='flex w-full justify-center absolute top-[54%] gap-5 items-center animate-fade-up animate-once'>
@@ -234,7 +234,7 @@ const responsive = {
   <p>hasta que alguien llega para darle sentido”</p>
   </div>
   </div>
-  </div>
+  
     </>
   );
 }
