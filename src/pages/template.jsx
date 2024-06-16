@@ -10,8 +10,7 @@ const [modal, setModal]=useState(false)
 const [modal2, setModal2]=useState(false)
 const [sound, setSound]=useState(false)
 const audioRef = useRef(new Audio('https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/Y2meta.app%20-%20Luis%20Fonsi%20-%20Llegaste%20T%C3%BA%20(128%20kbps).mp3?alt=media&token=506be528-2309-4339-84de-a96f16e1f160'));
-
-  const escuchar = () => {
+const escuchar = () => {
     audioRef.current.play();
     setSound(true);
   };
@@ -229,10 +228,29 @@ const responsive = {
     <p className='sans text-[2rem] text-white bg-[#6E7849] rounded-full px-[0.7rem]'>&</p>
     <p className='calendar text-[3rem]'>Ari</p>
   </div>
-  <div className='flex flex-col items-center absolute animate-fade-up animate-once top-[71%] text-[#848F60] calendar text-[0.9rem]'>
+  <div className='flex flex-col items-center absolute animate-fade-up animate-once top-[71%] text-[#848F60] calendar text-[0.95rem]'>
   <p>“ El amor es una palabra,</p>
   <p>hasta que alguien llega para darle sentido”</p>
   </div>
+  {sound === false && (
+   <div className=''>
+   <button onClick={escuchar}>
+   <svg class="w-10 h-10 bg-[#9494946c] py-[0.2rem] px-[0.2rem] rounded-full text-[gray] fixed top-4 right-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+ <path fill-rule="evenodd" d="M18.458 3.11A1 1 0 0 1 19 4v16a1 1 0 0 1-1.581.814L12 16.944V7.056l5.419-3.87a1 1 0 0 1 1.039-.076ZM22 12c0 1.48-.804 2.773-2 3.465v-6.93c1.196.692 2 1.984 2 3.465ZM10 8H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6V8Zm0 9H5v3a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-3Z" clip-rule="evenodd"/>
+</svg>
+
+   </button>
+ </div>
+ )}
+  {sound === true && (
+    <div className=''>
+    <button onClick={quitar}>
+    <svg class="w-10 h-10 bg-[#9494946c] py-[0.2rem] px-[0.2rem] rounded-full text-[gray] fixed top-4 right-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+  <path d="M5.707 4.293a1 1 0 0 0-1.414 1.414l14 14a1 1 0 0 0 1.414-1.414l-.004-.005C21.57 16.498 22 13.938 22 12a9.972 9.972 0 0 0-2.929-7.071 1 1 0 1 0-1.414 1.414A7.972 7.972 0 0 1 20 12c0 1.752-.403 3.636-1.712 4.873l-1.433-1.433C17.616 14.37 18 13.107 18 12c0-1.678-.69-3.197-1.8-4.285a1 1 0 1 0-1.4 1.428A3.985 3.985 0 0 1 16 12c0 .606-.195 1.335-.59 1.996L13 11.586V6.135c0-1.696-1.978-2.622-3.28-1.536L7.698 6.284l-1.99-1.991ZM4 8h.586L13 16.414v1.451c0 1.696-1.978 2.622-3.28 1.536L5.638 16H4a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2Z"/>
+</svg>
+</button>
+  </div>
+  )}
   </div>
   
     </>
