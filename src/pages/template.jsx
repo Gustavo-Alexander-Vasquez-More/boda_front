@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { Link as Anchor } from 'react-router-dom';
+import { Link as Anchor, useLocation } from 'react-router-dom';
 import CarouselMulti from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import '../fonts/fonts.css'
 export default function template() {
-    const responsive = {
+
+const responsive = {
         desktop: {
         breakpoint: { max: 3000, min: 1279 },
         items: 3,
@@ -57,23 +59,25 @@ export default function template() {
       <video  className='w-full relative h-screen object-cover' muted autoPlay  src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/Gus%20y%20Ari%20(3).mp4?alt=media&token=cd9bd2f7-434a-4955-a058-6b454ac02915" ></video>
     </div>
     <div className='w-full h-screen flex justify-center items-center'>
-   <img className='w-full h-screen relative' src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/Gus%20y%20Ari.jpg?alt=media&token=e69b234e-9a7b-457c-9570-54896fda24f6" alt="" />
-   <div className='absolute  top-[130%] left-[39%]  p-4 flex  gap-5 items-center'>
-      <div className='text-center'>
-        <div className='text-2xl'>{timeLeft.days}</div>
-        <div className='text-lg font-bold'>Días</div>
+   <img className='w-full h-screen relative' src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/reloj.jpg?alt=media&token=42f20e32-eacc-4a9a-a653-17633b09704d" alt="" />
+   <p className='absolute top-[120%] left-[40.5%] text-[5rem] calendar text-[black]'>Faltan</p>
+   <div className='absolute  top-[141%] left-[33%] flex  gap-5 items-center'>
+    
+      <div className='text-center border-r-[1px] border-solid border-[black] pr-[1rem]'>
+        <div className='text-[4rem] calendar'>{timeLeft.days}</div>
+        <div className='text-[1.5rem] font-bold calendar'>Días</div>
+      </div>
+      <div className='text-center border-r-[1px] border-solid border-[black] pr-[1rem]'>
+        <div className='text-[4rem] calendar'>{timeLeft.hours.toString().padStart(2, '0')}</div>
+        <div className='text-[1.5rem] font-bold calendar'>Horas</div>
+      </div>
+      <div className='text-center border-r-[1px] border-solid border-[black] pr-[1rem]'>
+        <div className='text-[4rem] calendar'>{timeLeft.minutes.toString().padStart(2, '0')}</div>
+        <div className='text-[1.5rem] font-bold calendar'>Minutos</div>
       </div>
       <div className='text-center'>
-        <div className='text-2xl'>{timeLeft.hours.toString().padStart(2, '0')}</div>
-        <div className='text-lg font-bold'>Horas</div>
-      </div>
-      <div className='text-center'>
-        <div className='text-2xl'>{timeLeft.minutes.toString().padStart(2, '0')}</div>
-        <div className='text-lg font-bold'>Minutos</div>
-      </div>
-      <div className='text-center'>
-        <div className='text-2xl'>{timeLeft.seconds.toString().padStart(2, '0')}</div>
-        <div className='text-lg font-bold'>Segundos</div>
+        <div className='text-[4rem] calendar'>{timeLeft.seconds.toString().padStart(2, '0')}</div>
+        <div className='text-[1.5rem] font-bold calendar'>Segundos</div>
       </div>
     </div>
    </div>
