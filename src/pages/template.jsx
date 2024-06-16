@@ -216,9 +216,24 @@ const responsive = {
   </div>
   {/* CELULAR */}
   <div className='lg:hidden w-full h-auto  flex flex-col'>
-  <div className='w-full h-screen'>
-      <video  className='w-full relative h-screen object-cover' muted autoPlay  src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/intro-celu.mp4?alt=media&token=ba5a35a8-1216-41d0-ae03-1169172d015e" ></video>
-    </div>
+  <div className='w-full h-screen flex flex-col items-center'>
+  <img  src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/Te%20invitamos%20a%20nuestro%20matrimonio%20(2).jpg?alt=media&token=cd12b5be-8fe1-406f-8458-0d874ae70461" alt="" />
+  <img className='absolute w-[13rem] top-[8%] right-[22.5%] animate-fade-up animate-once' src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/foto2.png?alt=media&token=61a84617-9790-45dd-90bb-ae7230506466" alt="" />
+  <div className='flex w-full justify-center absolute top-[54%] gap-5 items-center animate-fade-up animate-once'>
+    <div className='border-solid border-[1.5px] border-[#6E7849] w-[20%] '></div>
+    <p className='sans text-[#6E7849] font-semibold'>08.11.24</p>
+    <div className='border-solid border-[1.5px] border-[#6E7849] w-[20%]'></div>
+  </div>
+  <div className='flex w-full justify-center gap-2 absolute top-[57%] animate-fade-up animate-once items-center'>
+    <p className='calendar text-[3rem]'>Gus</p>
+    <p className='sans text-[2rem] text-white bg-[#6E7849] rounded-full px-[0.7rem]'>&</p>
+    <p className='calendar text-[3rem]'>Ari</p>
+  </div>
+  <div className='flex flex-col items-center absolute animate-fade-up animate-once top-[71%] text-[#848F60] calendar text-[0.9rem]'>
+  <p>“ El amor es una palabra,</p>
+  <p>hasta que alguien llega para darle sentido”</p>
+  </div>
+  </div>
   </div>
     </>
   );
