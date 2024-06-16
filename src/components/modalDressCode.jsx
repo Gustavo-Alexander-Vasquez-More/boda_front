@@ -11,8 +11,12 @@ export default function modalDressCode({ closeModal }) {
 </svg>
       </button>
       </div>
-      <div className='flex w-full h-auto py-[2rem] justify-center'>
-      <p className='text-[1.5rem]'>Elegante Sport</p>
+      <div className='flex w-full flex-col h-auto py-[2rem] items-center'>
+        <div className='flex justify-center'>
+          <img className='w-[15rem]' src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/hombres%20(2).png?alt=media&token=b6d7a451-a75a-4c73-80b7-cc85ed684a34" alt="" />
+          <img className='w-[15rem]' src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/mujeres%20(2).png?alt=media&token=7c6cca6d-faff-45e9-b1e8-a4391c3bae22" alt="" />
+        </div>
+      <p className='text-[1.5rem] pacifico'>Elegante Sport</p>
       </div>
       
     </div>
