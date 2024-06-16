@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link as Anchor, useNavigate } from 'react-router-dom';
+import '../fonts/fonts.css'
 export default function Index() {
 const navigate=useNavigate()
 const handleButtonClick = () => {
@@ -14,9 +15,10 @@ navigate('/templated');
       <Anchor onClick={handleButtonClick}  className='bg-[white] border-solid border-[1px] border-[gray] py-[0.3rem] text-center font-semibold text-[gray] px-[0.5rem] rounded-[10px]'>Ver la invitacion</Anchor>
     </div>
     </div>
-    <div className='w-full h-screen lg:hidden flex'>
-      <img src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/Te%20invitamos%20a%20nuestro%20matrimonio.png?alt=media&token=a2876b01-7de7-4314-bd25-7ef3e0014173" alt="" />
-      <div className='absolute top-[80%] left-[27%] flex gap-10'>
+    <div className='w-full h-screen lg:hidden flex justify-center'>
+      <img  src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/Te%20invitamos%20a%20nuestro%20matrimonio%20(2).jpg?alt=media&token=cd12b5be-8fe1-406f-8458-0d874ae70461" alt="" />
+      <img className='absolute z-50 top-[10%] animate-fade-up animate-once' src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/Untitled%20design%20(1).png?alt=media&token=048b5e12-f937-4989-8251-425a86dc7335" alt="" />
+      <div className='absolute top-[80%] flex gap-10 animate-fade-up animate-once'>
       <Anchor onClick={handleButtonClick}  className='bg-[white] border-solid border-[1px] border-[gray] px-[0.7rem] py-[0.3rem] text-center font-semibold text-[gray] rounded-[10px]'>Ver la invitacion</Anchor>
     </div>
     </div>
