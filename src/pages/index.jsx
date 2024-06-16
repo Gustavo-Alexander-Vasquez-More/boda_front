@@ -15,7 +15,7 @@ navigate('/templated');
     </div>
     </div>
     </div>
-    <div className='lg:hidden w-full h-auto  flex flex-col'>
+    <div className='lg:hidden w-full h-auto visible flex flex-col'>
   <div className='w-full h-screen'>
       <video  className='w-full relative h-screen object-cover' muted autoPlay  src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/intro%20index.mp4?alt=media&token=02050e6b-91ef-4e03-bf1e-3082f139c6ac" ></video>
       <div className='absolute top-[80%] left-[27%] flex gap-10'>
