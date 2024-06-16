@@ -15,7 +15,7 @@ navigate('/templated');
     </div>
     </div>
     <div className='w-full h-screen lg:hidden flex'>
-      <video  className='w-full relative h-screen object-cover' muted autoPlay  playsInline src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/intro%20index.mp4?alt=media&token=02050e6b-91ef-4e03-bf1e-3082f139c6ac" ></video>
+      <img src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/Te%20invitamos%20a%20nuestro%20matrimonio.png?alt=media&token=a2876b01-7de7-4314-bd25-7ef3e0014173" alt="" />
       <div className='absolute top-[80%] left-[27%] flex gap-10'>
       <Anchor onClick={handleButtonClick}  className='bg-[white] border-solid border-[1px] border-[gray] px-[0.7rem] py-[0.3rem] text-center font-semibold text-[gray] rounded-[10px]'>Ver la invitacion</Anchor>
     </div>
