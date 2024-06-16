@@ -3,20 +3,27 @@ import { Link as Anchor, useLocation } from 'react-router-dom';
 import CarouselMulti from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import '../fonts/fonts.css'
+import ModalDressCode from '../components/modalDressCode';
 export default function template() {
-
+const [modal, setModal]=useState(false)
+const openModal = () => {
+setModal(true);
+}
+const closeModal=()=>{
+  setModal(false)
+}
 const responsive = {
         desktop: {
         breakpoint: { max: 3000, min: 1279 },
-        items: 3,
+        items: 1,
       },
       laptop: {
         breakpoint: { max: 1279, min: 1024 },
-        items: 4,
+        items: 1,
       },
       tablet: {
         breakpoint: { max: 1023, min: 464 },
-        items: 2,
+        items: 1,
       },
       mobile: {
         breakpoint: { max: 463, min: 0 },
@@ -82,61 +89,66 @@ const responsive = {
     </div>
    </div>
    <div className='w-full h-screen'>
-   <img className='w-full h-screen relative' src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/Gus%20y%20Ari%20(2).jpg?alt=media&token=f3303993-41e0-49f7-ab98-d082f0e5edc8" alt="" />
-   <div className='absolute top-[257%] left-[17%]'>
-   <Anchor to={'https://wa.link/ehnn6s'} className='bg-[red] px-[0.7rem] py-[0.5rem] text-center text-white font-semibold rounded-[10px]'>Confirmar asistencia</Anchor>
-   </div>
-   <div className='absolute top-[257%] left-[74%]'>
-   <Anchor to={'https://api.whatsapp.com/send?phone=541134167740&text=Hola%20Ari%20y%20Gus!%2C%20muchas%20gracias%20por%20invitarme%20a%20su%20fiesta%20de%20boda%20%E2%9D%A4%EF%B8%8F%2C%20quiero%20confirmar%20mi%20asistencia%20para%20poder%20celebrar%20junto%20a%20ustedes%20este%20d%C3%ADa%20tan%20especial!'} className='bg-[red] px-[0.7rem] py-[0.5rem] text-center text-white font-semibold rounded-[10px]'>Confirmar asistencia</Anchor>
-   </div>
-   <div className='absolute top-[280%] left-[13%]'>
-   <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.3419036483197!2d-58.369287899999996!3d-34.6207992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334d305c0ad6f%3A0xfec98c7efe5dbb7e!2sHumberto%201%C2%BA%20250%2C%20C1103ACF%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1718249950321!5m2!1ses-419!2sar"
-      width="300"
-      height="150"
-      style={{ border: 0 }}
-      allowFullScreen=""
-      loading="lazy"
-      referrerPolicy="no-referrer-when-downgrade"
-    ></iframe>
-   </div>
-   <div className='absolute top-[280%] left-[70%]'>
-   <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.6699493765086!2d-58.41076272439287!3d-34.61250657295106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf1ad164bd1%3A0x3a0c6f38e41ddcfd!2sAdolfo%20Alsina%202971%2C%20C1207AAC%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1718250224826!5m2!1ses-419!2sar"
-      width="300"
-      height="150"
-      style={{ border: 0 }}
-      allowFullScreen=""
-      loading="lazy"
-      referrerPolicy="no-referrer-when-downgrade"
-    ></iframe>
-   </div>
+   <img className='w-full h-screen relative' src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/plantilla.jpg?alt=media&token=4e889593-d03a-4187-9c5e-95691aa65e8f" alt="" />
+   <img className='absolute top-[195%] left-[15%] w-[10rem]' src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/3.jpg?alt=media&token=a0e778ad-d008-4495-ad29-58f62340cc00" alt="" />
+   <img className='absolute top-[195%]  right-[15%] w-[10rem]' src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/2.jpg?alt=media&token=25bbad8b-97e6-49e7-881c-6e4f36e9fbea" alt="" />
+   <img className='absolute top-[220%] left-[6.5%] w-[25rem]' src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/sticker.png?alt=media&token=52e0234c-081d-4208-9034-d8a24d8a57f8" alt="" />
+   <img className='absolute top-[220%] right-[6.5%] w-[25rem]' src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/sticker.png?alt=media&token=52e0234c-081d-4208-9034-d8a24d8a57f8" alt="" />
+   <p className='text-white calendar absolute top-[219.7%] text-[2.5rem] left-[16%]'>Civil</p>
+   <p className='text-white calendar absolute top-[219.7%] text-[2.5rem] left-[76%]'>Fiesta</p>
+  
    </div>
    <div className='w-full h-screen'>
-   <img className='w-full h-screen relative' src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/Gus%20y%20Ari%20(3).jpg?alt=media&token=16e05cc0-2ffd-444c-8bed-48e9a52f4ca9" alt="" />
-    <div className='absolute flex flex-col top-[312%] left-[30%] text-center'>
-        <p className='text-[2.5rem] text-[gray] font-bold'>Retratos de nuestro amor</p>
-        <p className='text-[1.5rem] text-[#831d1d] font-bold'>Un minuto, un segundo, un instante que queda en la eternidad</p>
-    </div>
-    
-    <CarouselMulti responsive={responsive} className='flex items-center z-10 justify-center  absolute top-[-65%]'  infinite={true}>
- <div className='bg-[red] w-full h-[45vh]'>
-   <img  className='w-full' src="https://img.freepik.com/foto-gratis/pareja-joven-juntos-caminando-parque-otono_1303-26190.jpg" alt="" />
- </div>
- <div className='bg-[red] w-full h-[40vh]'>
-    <img className='w-full' src="https://images.ecestaticos.com/zRfC-onWw6Scca5K5PxNKW7Chzw=/240x0:2121x1410/1200x899/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F12c%2F7ae%2F61c%2F12c7ae61c0b2e76905bdffa3bf6cbad1.jpg" alt="" />
- </div>
- <div className='bg-[red] w-full h-[40vh]'>
-    <img className='w-full' src="https://media.istockphoto.com/id/1365865879/es/foto/cara-feliz-en-la-playa.jpg?s=612x612&w=0&k=20&c=Xrsq6Z373Na_P4ocnvQVKhncRNhuJdA2zr-9JDyLvaQ=" alt="" />
- </div>
- 
+   <img className='w-full h-screen relative' src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/plantilla.jpg?alt=media&token=4e889593-d03a-4187-9c5e-95691aa65e8f" alt="" />
+    <div className='absolute flex flex-col top-[330%] w-full items-center gap-10 text-center'>
+        <p className='text-[2.5rem] text-[#8B9360] font-bold calendar'>Retratos de nuestro amor</p>
+        <p className='text-[1.5rem] text-[#8B9360] font-bold calendar'>Un minuto, un segundo, un instante que queda en la eternidad</p>
+        
+        <CarouselMulti responsive={responsive} className=' w-[25%] h-[50vh]' autoPlay  showDots={true}  infinite={true}>
+    <img  className='object-cover w-full h-full' src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/1.1.png?alt=media&token=91c33ec9-d78a-4ef6-9f1d-3ffd2ca9ac38" alt="" />
+    <img className='object-cover w-full h-full' src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/2.2.png?alt=media&token=4634c5ac-d264-43f7-b734-22001b53bfcd" alt="" />
+    <img className='object-cover w-full h-full' src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/4.png?alt=media&token=f69434cc-9624-4468-a313-2ebc4401eb5a" alt="" />
+    <img className='object-cover w-full h-full' src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/5.png?alt=media&token=34a93b74-09bb-40ec-9367-795ce92a07e0" alt="" />
+    <img className='object-cover w-full h-full' src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/6.png?alt=media&token=0427cc56-e8e2-4943-95a8-13f09af8280f" alt="" />
 </CarouselMulti>
-    
+        
+    </div>
     </div>
     <div className='w-full h-screen'>
-   <img className='w-full h-screen relative' src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/Gus%20y%20Ari%20(3).jpg?alt=media&token=16e05cc0-2ffd-444c-8bed-48e9a52f4ca9" alt="" />
+   <img className='w-full h-screen relative' src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/plantilla.jpg?alt=media&token=4e889593-d03a-4187-9c5e-95691aa65e8f" alt="" />
     </div>
-
+    <div className='bg-[white] absolute top-[230%] w-[25%] h-auto  left-[7%]'>
+    <div className='w-full h-auto flex py-[1rem] flex-col items-center gap-5'>
+      <p className='calendar text-[2.5rem] font-semibold text-center'>Fecha</p>
+      <p className='calendar text-[2rem]  text-center'>08 . 11 . 2024</p>
+      <p className='calendar text-[2.5rem] font-semibold text-center'>Lugar</p>
+      <p className='calendar text-[2rem]  text-center'>Sede Comuna 1-CABA</p>
+      <p className='calendar text-[2.5rem] font-semibold text-center'>Dirección</p>
+      <p className='calendar text-[2rem]  text-center'>Humberto 1º 250</p>
+      <Anchor to={'https://maps.app.goo.gl/GBbe2QardeVUryev8'} className='border-solid border-[gray] hover:bg-[#8B9360] hover:text-white  border-[2px] text-[1.3rem] text-[gray] rounded-[5px] px-[0.5rem] py-[0.3rem]'>Como llegar</Anchor>
     </div>
+   </div>
+   <div className='bg-[white] absolute top-[230%] w-[25%] h-auto   right-[7%]'>
+    <div className='w-full h-auto flex py-[1rem] flex-col items-center gap-5'>
+      <p className='calendar text-[2.5rem] font-semibold text-center'>Fecha</p>
+      <p className='calendar text-[2rem]  text-center'>09 . 11 . 2024</p>
+      <p className='calendar text-[2.5rem] font-semibold text-center'>Lugar</p>
+      <p className='calendar text-[2rem]  text-center'>Alex recepciones</p>
+      <Anchor to={'https://wa.link/q1q985'} className='border-solid border-[gray] border-[2px] hover:bg-[#8B9360] hover:text-white  text-[gray] rounded-[5px] text-[1.3rem] px-[0.5rem] py-[0.3rem]'>Confirmar asistencia</Anchor>
+      <p className='calendar text-[2.5rem] font-semibold text-center'>Dirección</p>
+      <p className='calendar text-[2rem]  text-center'>Alsina 2971</p>
+     <Anchor to={'https://maps.app.goo.gl/putpEhXUdmejLK1x8'} className='border-solid border-[gray] border-[2px] text-[gray] hover:bg-[#8B9360] hover:text-white  rounded-[5px] text-[1.3rem] px-[0.5rem] py-[0.3rem]'>Como llegar</Anchor>
+     
+    </div>
+   </div>
+   <div className='absolute w-full h-auto top-[407%] gap-4 flex flex-col items-center'>
+   <p className='text-[3rem]  calendar  text-center pacifico text-[#4A663E]'>Dress Code</p>
+  <img className=' w-[25rem] pl-[2rem]' src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/percha.png?alt=media&token=84997594-df1b-4115-8610-3cee7fc6282d" alt="" />
+  <p className='text-[1.5rem] calendar'>Una orientacion para tu vestuario</p>
+  <Anchor onClick={openModal} className='border-solid border-[gray] border-[2px] text-[gray] hover:bg-[#8B9360] hover:text-white  rounded-[5px] text-[1.3rem] px-[0.5rem] py-[0.3rem]'>Ver más</Anchor>
+  </div>
+  <img className='absolute top-[307%]  w-full h-[10rem]' src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/e9675110-4400-416c-9351-b3fa86f4b90f.png?alt=media&token=9776d21d-d1f6-48f8-bd84-2c315a65c394" alt="" />
+  {modal && <ModalDressCode closeModal={closeModal} />}
+  </div>
   );
 }
