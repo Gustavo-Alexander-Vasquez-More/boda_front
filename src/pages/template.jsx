@@ -308,14 +308,27 @@ const responsive = {
     </div>
     <div className='w-full h-screen absolute'>
     <div className='w-full h-[35%]  flex flex-col items-center absolute bottom-0'>
-      
-    <img className='w-[10rem]' src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/2.jpg?alt=media&token=25bbad8b-97e6-49e7-881c-6e4f36e9fbea" alt="" />
+      <img className='w-[10.5rem]' src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/2.jpg?alt=media&token=25bbad8b-97e6-49e7-881c-6e4f36e9fbea" alt="" />
     <div className='flex justify-center top-[76%] h-auto items-center bg-cover w-full absolute bg-[url("https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/sticker.png?alt=media&token=52e0234c-081d-4208-9034-d8a24d8a57f8")]'>
     <p className='calendar text-[white] text-[2rem]'>Fiesta</p>
     </div>
     </div>
     </div>
-  </div> 
+    </div>
+  <div className='w-full h-screen absolute bg-[#FDFAF5]'>
+  <div className='w-full absolute items-center flex flex-col  h-[65%]'>
+    <div className='w-full h-auto flex py-[1rem] flex-col items-center gap-3 lg:gap-2 2xl:gap-5'>
+        <p className='calendar 2xl:text-[2.5rem] text-[2rem] lg:text-[2.3rem] font-semibold text-center text-[#4A663E]'>Fecha</p>
+        <p className='calendar text-[1.7rem] lg:text-[2rem]  text-center text-[#4A663E]'>09 . 11 . 2024</p>
+        <p className='calendar 2xl:text-[2.5rem] text-[2rem] lg:text-[2.3rem] font-semibold text-center text-[#4A663E]'>Lugar</p>
+        <p className='calendar text-[1.7rem] lg:text-[2rem]  text-center text-[#4A663E]'>Alex recepciones</p>
+        <Anchor to={'https://wa.link/q1q985'} className='border-solid border-[gray] border-[2px] hover:bg-[#8B9360] hover:text-white  text-[gray] rounded-[5px] text-[1.3rem] px-[0.5rem] py-[0.3rem]'>Confirmar asistencia</Anchor>
+        <p className='calendar 2xl:text-[2.5rem] text-[2rem] lg:text-[2.3rem] font-semibold text-center text-[#4A663E]'>Dirección</p>
+        <p className='calendar text-[1.7rem] lg:text-[2rem]  text-center text-[#4A663E]'>Alsina 2971</p>
+        <Anchor to={'https://maps.app.goo.gl/putpEhXUdmejLK1x8'} className='border-solid border-[gray] border-[2px] text-[gray] hover:bg-[#8B9360] hover:text-white  rounded-[5px] text-[1.3rem] px-[0.5rem] py-[0.3rem]'>Como llegar</Anchor>
+      </div>
+  </div>
+    </div> 
   </>
   );
 }
