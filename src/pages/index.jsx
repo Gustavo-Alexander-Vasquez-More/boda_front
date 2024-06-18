@@ -28,7 +28,7 @@ navigate('/templated');
       <p className='cinzel  text-[#848F60]'>Ariela</p>
       </div>
       <div className='absolute top-[87%] flex gap-10 animate-fade-up animate-once'>
-      <Anchor onClick={handleButtonClick}  className='bg-[white] border-solid border-[1px] border-[gray] px-[0.7rem] py-[0.3rem] text-center font-semibold text-[gray] rounded-[10px]'>Ver la invitacion</Anchor>
+      <Anchor onClick={handleButtonClick}  className='bg-[white] border-solid border-[1px] border-[gray] px-[1rem] py-[0.3rem] text-center font-semibold text-[gray] rounded-[10px]'>Ver la invitación</Anchor>
     </div>
     </div>
     </div>
