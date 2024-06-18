@@ -329,7 +329,7 @@ const responsive = {
       </div>
   </div>
   <img className='w-full h-[6rem] top-[68%] absolute' src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/raya_mobile.png?alt=media&token=b45e1f39-b8c7-42f2-95f1-ad37f7315842" alt="" />
-  <div className='w-full h-auto gap-2 flex flex-col absolute top-[82%] items-center'>
+  <div className='w-full h-auto px-[1rem] gap-2 flex flex-col absolute top-[82%] items-center'>
   <p className='text-[1.5rem] text-[#4A663E] font-bold calendar pacifico'>Retratos de nuestro amor</p>
   <p className='text-[1rem] text-[#8B9360]  calendar text-center'>Un minuto, un segundo, un instante que queda en la eternidad</p>
   </div>
@@ -345,11 +345,11 @@ const responsive = {
   <div className='w-full h-[50vh]'>
     <img className='w-full h-[4rem]' src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/ab48dc1f-dc37-42e0-8517-e8aa4cd21acf.png?alt=media&token=01b68fb3-77e7-46da-a17d-f64894241c32" alt="" />
   </div>
-  <div className='w-full z-50 absolute top-[58%] flex flex-col items-center'>
+  <div className='w-full z-50 absolute top-[58.5%] flex flex-col items-center'>
     <p className='text-[2rem]  calendar  text-center pacifico text-[#4A663E]'>Dress code</p>
-    <img className='w-[16rem] pl-[2rem]' src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/percha.png?alt=media&token=84997594-df1b-4115-8610-3cee7fc6282d" alt="" />
+    <img className='w-[17rem] pl-[2rem]' src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/percha.png?alt=media&token=84997594-df1b-4115-8610-3cee7fc6282d" alt="" />
   <p className='text-[1rem] calendar text-[#8B9360]'>Una orientación para tu vestuario</p>
-  <Anchor onClick={openModal} className='border-solid border-[gray] border-[2px] mt-[1rem] text-[gray] hover:bg-[#8B9360] hover:text-white  rounded-[5px]  px-[0.5rem] py-[0.3rem]'>Ver más</Anchor>
+  <Anchor onClick={openModal} className='border-solid border-[gray] border-[2px] mt-[1rem] text-[1.2rem] text-[gray] hover:bg-[#8B9360] hover:text-white  rounded-[5px]  px-[0.5rem] py-[0.3rem]'>Ver más</Anchor>
   </div>
     </div>
   </>
