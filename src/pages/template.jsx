@@ -230,7 +230,7 @@ const responsive = {
     <p className='sans text-[2rem] text-white bg-[#6E7849] rounded-full px-[0.7rem]'>&</p>
     <p className='calendar text-[3rem]'>Ari</p>
   </div>
-  <div className='flex flex-col items-center absolute animate-fade-up animate-once top-[87%] text-[#848F60] calendar text-[0.95rem]'>
+  <div className='flex flex-col items-center absolute animate-fade-up animate-once top-[87%] text-[#848F60] calendar text-[1rem]'>
   <p>“ El amor es una palabra,</p>
   <p>hasta que alguien llega para darle sentido”</p>
   </div>
