@@ -352,6 +352,7 @@ const responsive = {
   <Anchor onClick={openModal} className='border-solid border-[gray] border-[2px] mt-[1rem] text-[1.2rem] text-[gray] hover:bg-[#8B9360] hover:text-white  rounded-[5px]  px-[0.5rem] py-[0.3rem]'>Ver más</Anchor>
   </div>
     </div>
+    {modal && <ModalDressCode closeModal={closeModal} />}
   </>
   );
 }
