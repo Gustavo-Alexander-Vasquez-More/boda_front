@@ -293,9 +293,20 @@ const responsive = {
     </div>
   </div>
   </div>
-  {/* <div className='w-full h-screen lg:hidden flex justify-center bg-[#FDFAF5]'>
-  
-  </div> */}
+  <div className='w-full h-screen lg:hidden flex justify-center bg-[#FDFAF5]'>
+    <div className='w-full absolute items-center flex flex-col  h-[65%]'>
+    <div className='w-full h-auto flex py-[1rem] flex-col gap-3 items-center lg:gap-2 2xl:gap-5'>
+      <p className='calendar 2xl:text-[2.5rem] text-[2rem] lg:text-[2.3rem] font-semibold text-center text-[#4A663E]'>Fecha</p>
+      <p className='calendar text-[1.7rem] lg:text-[2rem]  text-center text-[#4A663E]'>08 . 11 . 2024</p>
+      <p className='calendar 2xl:text-[2.5rem] text-[2rem] lg:text-[2.3rem] font-semibold text-center text-[#4A663E]'>Lugar</p>
+      <p className='calendar text-[1.7rem] lg:text-[2rem]  text-center text-[#4A663E]'>Sede Comuna 1-CABA</p>
+      <p className='calendar 2xl:text-[2.5rem] text-[2rem] lg:text-[2.3rem] font-semibold text-center text-[#4A663E]'>Dirección</p>
+      <p className='calendar text-[1.7rem] lg:text-[2rem]  text-center text-[#4A663E]'>Humberto 1º 250</p>
+      <Anchor to={'https://maps.app.goo.gl/GBbe2QardeVUryev8'} className='border-solid border-[gray] hover:bg-[#8B9360] hover:text-white  border-[2px] text-[1.3rem] text-[gray] rounded-[5px] px-[0.5rem] py-[0.3rem]'>Como llegar</Anchor>
+    </div>
+   
+    </div>
+  </div> 
   </>
   );
 }
