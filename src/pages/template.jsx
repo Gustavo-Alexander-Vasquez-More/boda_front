@@ -259,7 +259,8 @@ const responsive = {
   <div className='w-full h-screen absolute flex justify-center items-center'>
     <img className='absolute top-[20%] w-full' src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/acf5f505-6bc8-4565-a189-2990c9cd856c.png?alt=media&token=7fd31734-19c6-43ca-acc7-a08d526fec33" alt="" />
   </div>
-  <div className='w-full h-full absolute top-[89%] flex flex-col gap-5 justify-center items-center'>
+  <div className='w-full  h-screen absolute  flex flex-col gap-5 justify-center items-center'>
+    <div className='flex flex-col items-center top-[32%] absolute'>
     <p className='text-[2.5rem] pacifico text-[#4A663E]'>Faltan</p>
     <div className='flex gap-2'>
     <div className='text-center border-r-[1px] border-solid border-[#4A663E] pr-[1rem]'>
@@ -278,6 +279,7 @@ const responsive = {
         <div className='text-[1rem] calendar text-[#8B9360]'>{timeLeft.seconds.toString().padStart(2, '0')}</div>
         <div className='text-[0.8rem] font-bold calendar text-[#4A663E]'>Segundos</div>
       </div>
+    </div>
     </div>
     </div>
   <div>
