@@ -315,7 +315,7 @@ const responsive = {
     </div>
     </div>
     </div>
-  <div className='w-full h-screen relative bg-[#FDFAF5]'>
+  <div className='w-full h-screen lg:hidden  relative bg-[#FDFAF5]'>
   <div className='w-full absolute items-center flex flex-col  h-[65%]'>
     <div className='w-full h-auto flex py-[1rem] flex-col items-center gap-3 lg:gap-2 2xl:gap-5'>
         <p className='calendar 2xl:text-[2.5rem] text-[2rem] lg:text-[2.3rem] font-semibold text-center text-[#4A663E]'>Fecha</p>
@@ -334,7 +334,7 @@ const responsive = {
   <p className='text-[1rem] text-[#8B9360]  calendar text-center'>Un minuto, un segundo, un instante que queda en la eternidad</p>
   </div>
   </div>
-  <div className='w-full h-screen relative flex flex-col items-center bg-[#FDFAF5]'>
+  <div className='w-full h-screen relative lg:hidden flex flex-col items-center bg-[#FDFAF5]'>
   <CarouselMulti responsive={responsive} className=' w-[90%] h-[50vh]' autoPlay infinite={true}>
     <img  className='object-cover w-full h-full' src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/1.1.png?alt=media&token=91c33ec9-d78a-4ef6-9f1d-3ffd2ca9ac38" alt="" />
     <img className='object-cover w-full h-full' src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/2.2.png?alt=media&token=4634c5ac-d264-43f7-b734-22001b53bfcd" alt="" />
