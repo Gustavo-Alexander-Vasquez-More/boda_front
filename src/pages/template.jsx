@@ -223,7 +223,7 @@ const responsive = {
     <div className='border-solid border-[1.5px] border-[#6E7849] w-[20%]'></div>
   </div>
   <div className='flex w-full justify-center absolute top-[80%] gap-5 items-center animate-fade-up animate-once'>
-    <div className='border-solid border-[1.5px] border-[#6E7849] w-[75%] '></div>
+    <div className='border-solid border-[1.5px] border-[#6E7849] w-[72%] '></div>
   </div>
   <div className='flex w-full justify-center gap-2 absolute top-[65%] animate-fade-up animate-once items-center'>
     <p className='calendar text-[3rem]'>Gus</p>
