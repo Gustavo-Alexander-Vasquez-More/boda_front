@@ -215,20 +215,22 @@ const responsive = {
   </div>
   {/* CELULAR */}
   <div className='w-full h-screen lg:hidden flex justify-center'>
- 
-  <img  src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/Te%20invitamos%20a%20nuestro%20matrimonio%20(2).jpg?alt=media&token=cd12b5be-8fe1-406f-8458-0d874ae70461" alt="" />
-  <img className='absolute w-[13rem] top-[8%] right-[22.5%] animate-fade-up animate-once' src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/foto2.png?alt=media&token=61a84617-9790-45dd-90bb-ae7230506466" alt="" />
-  <div className='flex w-full justify-center absolute top-[54%] gap-5 items-center animate-fade-up animate-once'>
+  <img  src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/template11.jpg?alt=media&token=8d59a4fd-7146-4c68-8261-c8d2aae26642" alt="" />
+  <img className='absolute w-[15rem] top-[9%] right-[18%] animate-fade-up animate-once' src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/foto2.png?alt=media&token=61a84617-9790-45dd-90bb-ae7230506466" alt="" />
+  <div className='flex w-full justify-center absolute top-[59%] gap-5 items-center animate-fade-up animate-once'>
     <div className='border-solid border-[1.5px] border-[#6E7849] w-[20%] '></div>
     <p className='sans text-[#6E7849] font-semibold'>08.11.24</p>
     <div className='border-solid border-[1.5px] border-[#6E7849] w-[20%]'></div>
   </div>
-  <div className='flex w-full justify-center gap-2 absolute top-[57%] animate-fade-up animate-once items-center'>
+  <div className='flex w-full justify-center absolute top-[80%] gap-5 items-center animate-fade-up animate-once'>
+    <div className='border-solid border-[1.5px] border-[#6E7849] w-[37%] '></div>
+  </div>
+  <div className='flex w-full justify-center gap-2 absolute top-[65%] animate-fade-up animate-once items-center'>
     <p className='calendar text-[3rem]'>Gus</p>
     <p className='sans text-[2rem] text-white bg-[#6E7849] rounded-full px-[0.7rem]'>&</p>
     <p className='calendar text-[3rem]'>Ari</p>
   </div>
-  <div className='flex flex-col items-center absolute animate-fade-up animate-once top-[71%] text-[#848F60] calendar text-[0.95rem]'>
+  <div className='flex flex-col items-center absolute animate-fade-up animate-once top-[87%] text-[#848F60] calendar text-[0.95rem]'>
   <p>“ El amor es una palabra,</p>
   <p>hasta que alguien llega para darle sentido”</p>
   </div>
@@ -252,7 +254,36 @@ const responsive = {
   </div>
   )}
   </div>
-  
-    </>
+  <div className='w-full h-screen lg:hidden flex justify-center'>
+  <img  src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/template33.jpg?alt=media&token=f20d7e3b-2601-4c86-b59f-1e46a99b1a44" alt="" />
+  <div className='w-full h-screen absolute flex justify-center items-center'>
+    <img className='absolute top-[20%] w-full' src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/acf5f505-6bc8-4565-a189-2990c9cd856c.png?alt=media&token=7fd31734-19c6-43ca-acc7-a08d526fec33" alt="" />
+  </div>
+  <div className='w-full h-full absolute top-[89%] flex flex-col gap-5 justify-center items-center'>
+    <p className='text-[2.5rem] pacifico text-[#4A663E]'>Faltan</p>
+    <div className='flex gap-2'>
+    <div className='text-center border-r-[1px] border-solid border-[#4A663E] pr-[1rem]'>
+        <div className='text-[1rem] calendar text-[#8B9360]'>{timeLeft.days}</div>
+        <div className='text-[0.8rem] font-bold calendar text-[#4A663E]'>Días</div>
+      </div>
+      <div className='text-center border-r-[1px] border-solid border-[#4A663E] pr-[1rem]'>
+        <div className='text-[1rem] calendar text-[#8B9360]'>{timeLeft.hours.toString().padStart(2, '0')}</div>
+        <div className='text-[0.8rem] font-bold calendar text-[#4A663E]'>Horas</div>
+      </div>
+      <div className='text-center border-r-[1px] border-solid border-[#4A663E] pr-[1rem]'>
+        <div className='text-[1rem] calendar text-[#8B9360]'>{timeLeft.minutes.toString().padStart(2, '0')}</div>
+        <div className='text-[0.8rem] font-bold calendar text-[#4A663E]'>Minutos</div>
+      </div>
+      <div className='text-center'>
+        <div className='text-[1rem] calendar text-[#8B9360]'>{timeLeft.seconds.toString().padStart(2, '0')}</div>
+        <div className='text-[0.8rem] font-bold calendar text-[#4A663E]'>Segundos</div>
+      </div>
+    </div>
+    </div>
+  <div>
+    
+  </div>
+  </div>
+  </>
   );
 }
