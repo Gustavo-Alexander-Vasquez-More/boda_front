@@ -306,6 +306,15 @@ const responsive = {
     </div>
    
     </div>
+    <div className='w-full h-screen absolute'>
+    <div className='w-full h-[35%]  flex flex-col items-center absolute bottom-0'>
+      
+    <img className='w-[9rem]' src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/3.jpg?alt=media&token=a0e778ad-d008-4495-ad29-58f62340cc00" alt="" />
+    <div className='flex justify-center top-[76%] h-auto items-center bg-cover w-full absolute bg-[url("https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/sticker.png?alt=media&token=52e0234c-081d-4208-9034-d8a24d8a57f8")]'>
+    <p className='calendar text-[white] text-[2rem]'>Fiesta</p>
+    </div>
+    </div>
+    </div>
   </div> 
   </>
   );
