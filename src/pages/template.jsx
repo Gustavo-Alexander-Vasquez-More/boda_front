@@ -254,13 +254,12 @@ const responsive = {
   </div>
   )}
   </div>
-  <div className='w-full h-screen lg:hidden flex justify-center'>
-  <img  src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/template33.jpg?alt=media&token=f20d7e3b-2601-4c86-b59f-1e46a99b1a44" alt="" />
+  <div className='w-full h-screen lg:hidden flex justify-center bg-[#FDFAF5]'>
   <div className='w-full h-screen absolute flex justify-center items-center'>
-    <img className='absolute top-[20%] w-full' src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/acf5f505-6bc8-4565-a189-2990c9cd856c.png?alt=media&token=7fd31734-19c6-43ca-acc7-a08d526fec33" alt="" />
+    <img className='absolute top-[0%] w-full' src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/acf5f505-6bc8-4565-a189-2990c9cd856c.png?alt=media&token=7fd31734-19c6-43ca-acc7-a08d526fec33" alt="" />
   </div>
   <div className='w-full  h-screen absolute  flex flex-col gap-5 justify-center items-center'>
-    <div className='flex flex-col items-center top-[32%] absolute'>
+    <div className='flex flex-col items-center top-[12%] absolute'>
     <p className='text-[2.5rem] pacifico text-[#4A663E]'>Faltan</p>
     <div className='flex gap-2'>
     <div className='text-center border-r-[1px] border-solid border-[#4A663E] pr-[1rem]'>
