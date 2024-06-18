@@ -315,7 +315,7 @@ const responsive = {
     </div>
     </div>
     </div>
-  <div className='w-full h-screen absolute bg-[#FDFAF5]'>
+  <div className='w-full h-screen relative bg-[#FDFAF5]'>
   <div className='w-full absolute items-center flex flex-col  h-[65%]'>
     <div className='w-full h-auto flex py-[1rem] flex-col items-center gap-3 lg:gap-2 2xl:gap-5'>
         <p className='calendar 2xl:text-[2.5rem] text-[2rem] lg:text-[2.3rem] font-semibold text-center text-[#4A663E]'>Fecha</p>
@@ -325,10 +325,33 @@ const responsive = {
         <Anchor to={'https://wa.link/q1q985'} className='border-solid border-[gray] border-[2px] hover:bg-[#8B9360] hover:text-white  text-[gray] rounded-[5px] text-[1.3rem] px-[0.5rem] py-[0.3rem]'>Confirmar asistencia</Anchor>
         <p className='calendar 2xl:text-[2.5rem] text-[2rem] lg:text-[2.3rem] font-semibold text-center text-[#4A663E]'>Dirección</p>
         <p className='calendar text-[1.7rem] lg:text-[2rem]  text-center text-[#4A663E]'>Alsina 2971</p>
-        <Anchor to={'https://maps.app.goo.gl/putpEhXUdmejLK1x8'} className='border-solid border-[gray] border-[2px] text-[gray] hover:bg-[#8B9360] hover:text-white  rounded-[5px] text-[1.3rem] px-[0.5rem] py-[0.3rem]'>Como llegar</Anchor>
+        <Anchor to={'https://maps.app.goo.gl/putpEhXUdmejLK1x8'} className='z-50 border-solid border-[gray] border-[2px] text-[gray] hover:bg-[#8B9360] hover:text-white  rounded-[5px] text-[1.3rem] px-[0.5rem] py-[0.3rem]'>Como llegar</Anchor>
       </div>
   </div>
-    </div> 
+  <img className='w-full h-[6rem] top-[68%] absolute' src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/raya_mobile.png?alt=media&token=b45e1f39-b8c7-42f2-95f1-ad37f7315842" alt="" />
+  <div className='w-full h-auto gap-2 flex flex-col absolute top-[82%] items-center'>
+  <p className='text-[1.5rem] text-[#4A663E] font-bold calendar pacifico'>Retratos de nuestro amor</p>
+  <p className='text-[1rem] text-[#8B9360]  calendar text-center'>Un minuto, un segundo, un instante que queda en la eternidad</p>
+  </div>
+  </div>
+  <div className='w-full h-screen relative flex flex-col items-center bg-[#FDFAF5]'>
+  <CarouselMulti responsive={responsive} className=' w-[90%] h-[50vh]' autoPlay infinite={true}>
+    <img  className='object-cover w-full h-full' src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/1.1.png?alt=media&token=91c33ec9-d78a-4ef6-9f1d-3ffd2ca9ac38" alt="" />
+    <img className='object-cover w-full h-full' src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/2.2.png?alt=media&token=4634c5ac-d264-43f7-b734-22001b53bfcd" alt="" />
+    <img className='object-cover w-full h-full' src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/4.png?alt=media&token=f69434cc-9624-4468-a313-2ebc4401eb5a" alt="" />
+    <img className='object-cover w-full h-full' src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/5.png?alt=media&token=34a93b74-09bb-40ec-9367-795ce92a07e0" alt="" />
+    <img className='object-cover w-full h-full' src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/6.png?alt=media&token=0427cc56-e8e2-4943-95a8-13f09af8280f" alt="" />
+</CarouselMulti>
+  <div className='w-full h-[50vh]'>
+    <img className='w-full h-[4rem]' src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/ab48dc1f-dc37-42e0-8517-e8aa4cd21acf.png?alt=media&token=01b68fb3-77e7-46da-a17d-f64894241c32" alt="" />
+  </div>
+  <div className='w-full z-50 absolute top-[58%] flex flex-col items-center'>
+    <p className='text-[2rem]  calendar  text-center pacifico text-[#4A663E]'>Dress code</p>
+    <img className='w-[16rem] pl-[2rem]' src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/percha.png?alt=media&token=84997594-df1b-4115-8610-3cee7fc6282d" alt="" />
+  <p className='text-[1rem] calendar text-[#8B9360]'>Una orientación para tu vestuario</p>
+  <Anchor onClick={openModal} className='border-solid border-[gray] border-[2px] mt-[1rem] text-[gray] hover:bg-[#8B9360] hover:text-white  rounded-[5px]  px-[0.5rem] py-[0.3rem]'>Ver más</Anchor>
+  </div>
+    </div>
   </>
   );
 }
