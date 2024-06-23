@@ -11,10 +11,10 @@ export default function modal2({closeModal2}) {
 </svg>
       </button>
       </div>
-      <div className='flex w-full h-auto py-[1rem] justify-between px-[1rem]'>
-        <img className='w-[5rem]' src="https://play-lh.googleusercontent.com/4hN-UTy-2_Ma1Ouye5FpN2Issj73Oms62hokLp5OZR6zdt2yzkEpGSpK0v47RK8Oc8Q" alt="" />
+      <div className='flex w-full lg:flex-row flex-col h-auto py-[1rem] items-center justify-between px-[1rem]'>
+        <img className='w-[5rem] ' src="https://play-lh.googleusercontent.com/4hN-UTy-2_Ma1Ouye5FpN2Issj73Oms62hokLp5OZR6zdt2yzkEpGSpK0v47RK8Oc8Q" alt="" />
       <div className='flex flex-col'>
-      <p className='text-[1.3rem] font-semibold'>Transferencia Mercado Pago:</p>
+      <p className='lg:text-[1.3rem] text-[1.1rem] font-semibold'>Transferencia Mercado Pago:</p>
       <p>ALIAS: bodaAriyGus.mp</p>
       <p>CVU: 0000003100004689001781</p>
       </div>
