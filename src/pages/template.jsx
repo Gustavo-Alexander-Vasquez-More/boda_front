@@ -49,7 +49,7 @@ const responsive = {
         items: 1,
       }};
     const calculateTimeLeft = () => {
-        const targetDate = new Date('2024-11-15T10:00:00');
+        const targetDate = new Date('2024-11-16T20:00:00');
         const now = new Date();
         const difference = targetDate - now;
     
@@ -142,7 +142,7 @@ const responsive = {
    <p className='text-[3rem]  calendar  text-center pacifico text-[#4A663E]'>Dress Code</p>
   <img className=' w-[25rem] pl-[2rem]' src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/percha.png?alt=media&token=84997594-df1b-4115-8610-3cee7fc6282d" alt="" />
   <p className='text-[1.5rem] calendar text-[#8B9360]'>Una orientación para tu vestuario</p>
-  <Anchor onClick={openModal} className='border-solid border-[gray] border-[2px] text-[gray] hover:bg-[#8B9360] hover:text-white  rounded-[5px] text-[1.3rem] px-[0.5rem] py-[0.3rem]'>Ver más</Anchor>
+  <Anchor onClick={openModal} className='border-solid border-[gray] border-[2px] text-[gray] hover:bg-[#8B9360] hover:text-white  rounded-[5px] text-[1.3rem] px-[2rem] py-[0.3rem]'>Ver más</Anchor>
   </div>
   <img className='absolute top-[307%]  w-full h-[10rem]' src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/e9675110-4400-416c-9351-b3fa86f4b90f.png?alt=media&token=9776d21d-d1f6-48f8-bd84-2c315a65c394" alt="" />
   <img className='absolute top-[395%]  w-full h-[10rem]' src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/ab48dc1f-dc37-42e0-8517-e8aa4cd21acf.png?alt=media&token=01b68fb3-77e7-46da-a17d-f64894241c32" alt="" />
@@ -151,7 +151,7 @@ const responsive = {
   <div className='flex flex-col gap-4 items-center'>
   <img className='w-[20rem]' src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/11e1577f-13cc-4ebd-9b7c-612bb9b892dd.png?alt=media&token=a6df4ed6-ec9d-422d-96b6-5e09df27a975" alt="" />
   <p className=' text-[1.5rem] calendar text-[#8B9360]'>Si deseás regalarnos algo más que tu hermosa presencia ...</p>
-  <Anchor onClick={openModal2} className='border-solid border-[gray] hover:bg-[#8B9360] hover:text-white  border-[2px] text-[1.3rem] text-[gray] rounded-[5px] px-[0.5rem] py-[0.3rem]'>Ver más</Anchor>
+  <Anchor onClick={openModal2} className='border-solid border-[gray] hover:bg-[#8B9360] hover:text-white  border-[2px] text-[1.3rem] text-[gray] rounded-[5px] px-[2rem] py-[0.3rem]'>Ver más</Anchor>
   </div>
   </div>
   {modal && <ModalDressCode closeModal={closeModal} />}
@@ -185,11 +185,11 @@ const responsive = {
     <div className='w-full h-auto flex py-[1rem] flex-col items-center lg:gap-2 2xl:gap-5'>
       <p className='calendar 2xl:text-[2.5rem] lg:text-[2.3rem] font-semibold text-center text-[#4A663E]'>Fecha</p>
       <p className='calendar text-[2rem]  text-center text-[#4A663E]'>15 . 11 . 2024</p>
-      <p className='calendar 2xl:text-[2.5rem] lg:text-[2.3rem] font-semibold text-center text-[#4A663E]'>Lugar</p>
-      <p className='calendar text-[2rem]  text-center text-[#4A663E]'>Sede Comuna 1-CABA</p>
       <p className='calendar 2xl:text-[2.5rem] lg:text-[2.3rem] font-semibold text-center text-[#4A663E]'>Dirección</p>
-      <p className='calendar text-[2rem]  text-center text-[#4A663E]'>Humberto 1º 250</p>
-      <Anchor to={'https://maps.app.goo.gl/GBbe2QardeVUryev8'} className='border-solid border-[gray] hover:bg-[#8B9360] hover:text-white  border-[2px] text-[1.3rem] text-[gray] rounded-[5px] px-[0.5rem] py-[0.3rem]'>Como llegar</Anchor>
+      <p className='calendar text-[2rem]  text-center text-[#4A663E]'>Uruguay 753-CABA</p>
+      <p className='calendar 2xl:text-[2.5rem] lg:text-[2.3rem] font-semibold text-center text-[#4A663E]'>Horario</p>
+      <p className='calendar text-[2rem]  text-center text-[#4A663E]'>9:30 Hrs</p>
+      <Anchor to={'https://maps.app.goo.gl/LPEkdE7BXMei7e6E6'} className='border-solid border-[gray] hover:bg-[#8B9360] hover:text-white  border-[2px] text-[1.3rem] text-[gray] rounded-[5px] px-[1rem] py-[0.3rem]'>📍Como llegar</Anchor>
     </div>
    </div>
    </div>
@@ -202,12 +202,11 @@ const responsive = {
         <div className='w-full h-auto flex py-[1rem] flex-col items-center lg:gap-2 2xl:gap-5'>
         <p className='calendar 2xl:text-[2.5rem] lg:text-[2.3rem] font-semibold text-center text-[#4A663E]'>Fecha</p>
         <p className='calendar text-[2rem]  text-center text-[#4A663E]'>16 . 11 . 2024</p>
-        <p className='calendar 2xl:text-[2.5rem] lg:text-[2.3rem] font-semibold text-center text-[#4A663E]'>Lugar</p>
-        <p className='calendar text-[2rem]  text-center text-[#4A663E]'>San telmo Recepciones</p>
-        <Anchor to={'https://wa.link/q1q985'} className='border-solid border-[gray] border-[2px] hover:bg-[#8B9360] hover:text-white  text-[gray] rounded-[5px] text-[1.3rem] px-[0.5rem] py-[0.3rem]'>Confirmar asistencia</Anchor>
         <p className='calendar 2xl:text-[2.5rem] lg:text-[2.3rem] font-semibold text-center text-[#4A663E]'>Dirección</p>
-        <p className='calendar text-[2rem]  text-center text-[#4A663E]'>Av. Brasil 726</p>
-        <Anchor to={'https://maps.app.goo.gl/jpyn5nzieWpRmgSL9'} className='border-solid border-[gray] border-[2px] text-[gray] hover:bg-[#8B9360] hover:text-white  rounded-[5px] text-[1.3rem] px-[0.5rem] py-[0.3rem]'>Como llegar</Anchor>
+        <p className='calendar text-[2rem]  text-center text-[#4A663E]'>Av. Brasil 726-CABA</p>
+        <p className='calendar 2xl:text-[2.5rem] lg:text-[2.3rem] font-semibold text-center text-[#4A663E]'>Horario</p>
+        <p className='calendar text-[2rem]  text-center text-[#4A663E]'>19:30 Hrs</p>
+        <Anchor to={'https://maps.app.goo.gl/jpyn5nzieWpRmgSL9'} className='border-solid border-[gray] border-[2px] text-[gray] hover:bg-[#8B9360] hover:text-white  rounded-[5px] text-[1.3rem] px-[1rem] py-[0.3rem]'>📍Como llegar</Anchor>
       </div>
    </div>
     </div>
@@ -298,10 +297,10 @@ const responsive = {
     <div className='w-full h-auto flex py-[1rem] flex-col gap-3 items-center lg:gap-2 2xl:gap-5'>
       <p className='calendar 2xl:text-[2.5rem] text-[2rem] lg:text-[2.3rem] font-semibold text-center text-[#4A663E]'>Fecha</p>
       <p className='calendar text-[1.7rem] lg:text-[2rem]  text-center text-[#4A663E]'>15 . 11 . 2024</p>
-      <p className='calendar 2xl:text-[2.5rem] text-[2rem] lg:text-[2.3rem] font-semibold text-center text-[#4A663E]'>Lugar</p>
-      <p className='calendar text-[1.7rem] lg:text-[2rem]  text-center text-[#4A663E]'>Sede Comuna 1-CABA</p>
       <p className='calendar 2xl:text-[2.5rem] text-[2rem] lg:text-[2.3rem] font-semibold text-center text-[#4A663E]'>Dirección</p>
-      <p className='calendar text-[1.7rem] lg:text-[2rem]  text-center text-[#4A663E]'>Humberto 1º 250</p>
+      <p className='calendar text-[1.7rem] lg:text-[2rem]  text-center text-[#4A663E]'>Uruguay 753-CABA</p>
+      <p className='calendar 2xl:text-[2.5rem] text-[2rem] lg:text-[2.3rem] font-semibold text-center text-[#4A663E]'>Horario</p>
+      <p className='calendar text-[1.7rem] lg:text-[2rem]  text-center text-[#4A663E]'>9:30 Hrs</p>
       <Anchor  to={'https://maps.app.goo.gl/GBbe2QardeVUryev8'} className='border-solid z-50 border-[gray] hover:bg-[#8B9360] hover:text-white  border-[2px] text-[1.3rem] text-[gray] rounded-[5px] px-[0.5rem] py-[0.3rem]'>Como llegar</Anchor>
     </div>
    
@@ -320,12 +319,11 @@ const responsive = {
     <div className='w-full h-auto flex py-[1rem] flex-col items-center gap-3 lg:gap-2 2xl:gap-5'>
         <p className='calendar 2xl:text-[2.5rem] text-[2rem] lg:text-[2.3rem] font-semibold text-center text-[#4A663E]'>Fecha</p>
         <p className='calendar text-[1.7rem] lg:text-[2rem]  text-center text-[#4A663E]'>16 . 11 . 2024</p>
-        <p className='calendar 2xl:text-[2.5rem] text-[2rem] lg:text-[2.3rem] font-semibold text-center text-[#4A663E]'>Lugar</p>
-        <p className='calendar text-[1.7rem] lg:text-[2rem]  text-center text-[#4A663E]'>San Telmo Recepciones</p>
-        <Anchor to={'https://wa.link/q1q985'} className='border-solid border-[gray] border-[2px] hover:bg-[#8B9360] hover:text-white  text-[gray] rounded-[5px] text-[1.3rem] px-[0.5rem] py-[0.3rem]'>Confirmar asistencia</Anchor>
         <p className='calendar 2xl:text-[2.5rem] text-[2rem] lg:text-[2.3rem] font-semibold text-center text-[#4A663E]'>Dirección</p>
-        <p className='calendar text-[1.7rem] lg:text-[2rem]  text-center text-[#4A663E]'>Av. Brasil 726</p>
-        <Anchor to={'https://maps.app.goo.gl/jpyn5nzieWpRmgSL9'} className='z-50 border-solid border-[gray] border-[2px] text-[gray] hover:bg-[#8B9360] hover:text-white  rounded-[5px] text-[1.3rem] px-[0.5rem] py-[0.3rem]'>Como llegar</Anchor>
+        <p className='calendar text-[1.7rem] lg:text-[2rem]  text-center text-[#4A663E]'>Av. Brasil 726-CABA</p>
+        <p className='calendar 2xl:text-[2.5rem] text-[2rem] lg:text-[2.3rem] font-semibold text-center text-[#4A663E]'>Horario</p>
+        <p className='calendar text-[1.7rem] lg:text-[2rem]  text-center text-[#4A663E]'>19:30 Hrs</p>
+        <Anchor to={'https://maps.app.goo.gl/jpyn5nzieWpRmgSL9'} className='z-50 border-solid border-[gray] border-[2px] text-[gray] hover:bg-[#8B9360] hover:text-white  rounded-[5px] text-[1.3rem] px-[1rem] py-[0.3rem]'>Como llegar</Anchor>
       </div>
   </div>
   <img className='w-full h-[6rem] top-[68%] absolute' src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/raya_mobile.png?alt=media&token=b45e1f39-b8c7-42f2-95f1-ad37f7315842" alt="" />
