@@ -301,7 +301,7 @@ const responsive = {
       <p className='calendar text-[1.7rem] lg:text-[2rem]  text-center text-[#4A663E]'>Uruguay 753-CABA</p>
       <p className='calendar 2xl:text-[2.5rem] text-[2rem] lg:text-[2.3rem] font-semibold text-center text-[#4A663E]'>Horario</p>
       <p className='calendar text-[1.7rem] lg:text-[2rem]  text-center text-[#4A663E]'>9:30 Hrs</p>
-      <Anchor  to={'https://maps.app.goo.gl/GBbe2QardeVUryev8'} className='border-solid z-50 border-[gray] hover:bg-[#8B9360] hover:text-white  border-[2px] text-[1.3rem] text-[gray] rounded-[5px] px-[0.5rem] py-[0.3rem]'>Como llegar</Anchor>
+      <Anchor  to={'https://maps.app.goo.gl/LPEkdE7BXMei7e6E6'} className='border-solid z-50 border-[gray] hover:bg-[#8B9360] hover:text-white  border-[2px] text-[1.3rem] text-[gray] rounded-[5px] px-[0.5rem] py-[0.3rem]'>Como llegar</Anchor>
     </div>
    
     </div>
