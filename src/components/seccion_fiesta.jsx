@@ -55,7 +55,7 @@ export default function seccion_fiesta() {
   {/* Encabezado de la Ceremonia Matrimonial */}
   <thead className="w-full">
     <tr className="w-full text-center">
-      <th colSpan="2" className="p-4 bg-[#4A663E] text-[2rem] text-white border-b border-[white] pacifico">Lugar</th>
+      <th colSpan="2" className="p-4 bg-[#869A98] text-[2rem] text-white border-b border-[white] pacifico">Lugar</th>
     </tr>
   </thead>
   <tbody>
@@ -67,7 +67,7 @@ export default function seccion_fiesta() {
   {/* Encabezado de Recepcion */}
   <thead className="w-full">
     <tr className="w-full text-center">
-      <th colSpan="2" className="p-4 bg-[#4A663E] text-[2rem] pacifico text-white border-b border-[white]">Recepción</th>
+      <th colSpan="2" className="p-4 bg-[#869A98] text-[2rem] pacifico text-white border-b border-[white]">Recepción</th>
     </tr>
   </thead>
   <tbody>
