@@ -1,6 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Link as Anchor, useLocation } from 'react-router-dom';
-
 import '../fonts/fonts.css'
 import Seccion_bienvenida from '../components/seccion_bienvenida';
 import Seccion_reloj from '../components/seccion_reloj';
@@ -8,8 +6,10 @@ import Seccion_fiesta from '../components/seccion_fiesta';
 import Seccion_retratos from '../components/seccion_retratos';
 import ModalDressCode from '../components/modalDressCode';
 import Modal2 from '../components/modal2';
+import Seccion_padres from '../components/seccion_padres';
+import Seccion_dress_code from '../components/seccion_dress_code';
 import { animateScroll as scroll } from 'react-scroll';
-import Swal from 'sweetalert2';
+import Footer from '../components/footer';
 export default function template() {
 const [modal, setModal]=useState(false)
 const [modal2, setModal2]=useState(false)
@@ -75,10 +75,12 @@ return (
   {/* ESTO ES PARA PC */}
   <div className='w-full h-auto lg:flex lg:flex-col hidden'>
     <Seccion_bienvenida  escuchar={escuchar} quitar={quitar}/>
+    <Seccion_padres/>
     <Seccion_fiesta/>
     <Seccion_retratos/>
+    <Seccion_dress_code/>
     <Seccion_reloj/>
-   
+   <Footer/>
    
     {/* <div className='w-full h-screen'>
    <img className='w-full h-screen relative' src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/plantilla.jpg?alt=media&token=4e889593-d03a-4187-9c5e-95691aa65e8f" alt="" />

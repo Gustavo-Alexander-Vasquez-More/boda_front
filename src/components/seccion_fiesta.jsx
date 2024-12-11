@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-
+import vide from '../images/Pareja caminando playa vacaciones mar gratis - free stock coupl walking beach sea.mp4'
 export default function seccion_fiesta() {
   const [showForm, setShowForm] = useState(false);
   const [nombre, setNombre]=useState()
@@ -36,46 +36,48 @@ export default function seccion_fiesta() {
                       <label className="block text-sm font-medium text-gray-700">Nombre completo</label>
                       <input ref={inputNombre} onChange={captureNombre} type="text" className="w-full border border-gray-300 rounded px-3 py-2" required/>
                   </div>
-                 
+                 <p className='py-[1rem] text-[0.9rem]'>No sabés como llegar al lugar? <a className='font-semibold underline' target='_blank' href='https://maps.app.goo.gl/um7eoNg8Gn3p5bdS6'>Abrir con google maps</a></p>
                   <div className="flex justify-between">
                       <button  onClick={enviar} className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Enviar</button>
                       <button type="button" onClick={() => setShowForm(false)} className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Cancelar</button>
                   </div>
               </form>
           </div>
+
       </div>
       )}
-    <div className='w-full h-screen flex relative justify-center items-center bg-cover py-[2rem] bg-no-repeat bg-[url("https://traveler.marriott.com/es/wp-content/uploads/sites/2/2023/02/SJUPR_San_Juan_Marriott_Wedding_1920x1080.jpg")]'>
+    <div className='w-full h-screen flex relative justify-center items-center bg-cover py-[2rem] bg-no-repeat '>
+      <video className='absolute w-full h-screen object-cover' src={vide} autoPlay muted loop></video>
       <div className='absolute bg-[black] opacity-40 w-full h-full'></div>
-      <div className='w-full z-40 h-screen px-[3rem] justify-center items-center  gap-[2rem] overflow-auto flex flex-col'>
-        <p className='text-white font-semibold montserrat text-[3rem] text-center'>- Cronograma -</p>
+      <div className='w-[60%] z-40 h-screen px-[3rem] justify-center items-center  gap-[2rem] overflow-auto flex flex-col'>
+        <p className='text-white font-semibold pacifico text-[4rem] text-center'>- Cronograma -</p>
         <table className="w-full border-collapse bg-[#ffffffc5] border-[white]">
   {/* Encabezado de la Ceremonia Matrimonial */}
   <thead className="w-full">
     <tr className="w-full text-center">
-      <th colSpan="2" className="p-4 bg-[#4A663E] text-[1.3rem] text-white border-b border-[white]">Lugar</th>
+      <th colSpan="2" className="p-4 bg-[#4A663E] text-[2rem] text-white border-b border-[white] pacifico">Lugar</th>
     </tr>
   </thead>
   <tbody>
     <tr className="border-b border-[white]">
-      <td className="elegant font-semibold text-center py-4">Stephenson 5478-Quinta la marianita-MORENO</td>
+      <td className="montserrat font-semibold text-center py-4">Stephenson #5478  Quinta la marianita-MORENO BA</td>
     </tr>
   </tbody>
   
   {/* Encabezado de Recepcion */}
   <thead className="w-full">
     <tr className="w-full text-center">
-      <th colSpan="2" className="p-4 bg-[#4A663E] text-[1.3rem] text-white border-b border-[white]">Recepción</th>
+      <th colSpan="2" className="p-4 bg-[#4A663E] text-[2rem] pacifico text-white border-b border-[white]">Recepción</th>
     </tr>
   </thead>
   <tbody>
     <tr className="border-b border-[white] w-full flex justify-center text-center">
-      <td className="p-4 font-bold reloj w-full">Hora</td>
-      <td className="p-4 font-bold reloj w-full">Fecha</td>
+      <td className="p-4 font-bold pacifico text-[1.2rem] w-full">Horario</td>
+      <td className="p-4 font-bold pacifico text-[1.2rem] w-full">Fecha</td>
     </tr>
     <tr className="text-center w-full flex justify-center ">
-      <td className="py-4 w-full elegant font-semibold">17:00 Hs</td>
-      <td className="py-4 w-full elegant font-semibold">08 . 03 . 2025</td>
+      <td className="py-4 w-full text-[1.2rem] elegant font-semibold">17:00 Hs</td>
+      <td className="py-4 w-full text-[1.2rem] elegant font-semibold">08 . 03 . 2025</td>
     </tr>
   </tbody>
 </table>
