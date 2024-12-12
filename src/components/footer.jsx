@@ -30,7 +30,7 @@ export default function footer() {
                 </a>
             </div>
         </div>
-      <div className='flex flex-col items-center'>
+      <div className='flex flex-col text-center items-center'>
       <p>&copy; {new Date().getFullYear()} ModernInvitation. Todos los derechos reservados.</p>
       <p className='text-[0.8rem] font-semibold'>Desarollado y diseñado por Gustavo Alexander Vásquez More</p>
       </div>
