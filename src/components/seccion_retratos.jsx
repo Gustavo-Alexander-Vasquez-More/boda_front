@@ -22,7 +22,7 @@ export default function seccion_retratos({deslizar_dress}) {
       }};
     
   return (
-    <div className='w-full h-screen  flex justify-center items-center bg-cover 'style={{ backgroundImage: `url(${background})` }}>
+    <div className='w-full h-screen  flex justify-center items-center bg-cover px-[1rem]'style={{ backgroundImage: `url(${background})` }}>
         <div className=' flex flex-col w-full items-center gap-5 text-center'>
         <p className='text-[2.7rem] lg:text-[2.5rem] text-[#4A663E] font-bold calendar pacifico'>Retratos de nuestra historia</p>
         <p className='text-[1.3rem] lg:text-[1.5rem] text-[#8B9360]  calendar'>Un minuto, un segundo, un instante que queda en la eternidad</p>

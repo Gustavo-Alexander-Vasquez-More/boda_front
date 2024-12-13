@@ -46,10 +46,10 @@ export default function seccion_fiesta({deslizar_retrato}) {
 
       </div>
       )}
-    <div className='w-full h-screen flex relative justify-center items-center bg-cover lg:py-[2rem] bg-no-repeat '>
+    <div className='w-full h-screen flex relative justify-center items-center bg-cover lg:py-[2rem] px-[1rem] bg-no-repeat '>
       <video className='absolute w-full h-screen object-cover' src={vide} autoPlay muted loop></video>
       <div className='absolute bg-[black] opacity-40 w-full h-full'></div>
-      <div className='lg:w-[60%] w-[95%] z-40 h-screen lg:selection:px-[3rem] justify-center items-center  gap-[2rem] overflow-auto flex flex-col'>
+      <div className='lg:w-[60%] w-[100%] z-40 h-screen lg:selection:px-[3rem] justify-center items-center  gap-[2rem] overflow-auto flex flex-col'>
         <p className='text-white font-semibold pacifico text-[2rem] lg:text-[4rem] text-center'>- Cronograma -</p>
         <table className="w-full border-collapse bg-[#ffffffc5] border-[white]">
   {/* Encabezado de la Ceremonia Matrimonial */}
@@ -59,7 +59,7 @@ export default function seccion_fiesta({deslizar_retrato}) {
     </tr>
   </thead>
   <tbody>
-    <tr className="border-b border-[white]">
+    <tr className="border-b border-[white] px-[1rem]">
       <td className="montserrat font-semibold text-center py-2 lg:text-[1rem] text-[0.8rem] lg:py-4">Stephenson #5478  Quinta la marianita-MORENO BA</td>
     </tr>
   </tbody>
