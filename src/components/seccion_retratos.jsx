@@ -39,6 +39,8 @@ export default function seccion_retratos({deslizar_dress}) {
     <img className="object-contain w-full h-full " src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/fotos%20carrousel%20sergio%20y%20cristina%2FIMG-20241201-WA0021.jpg?alt=media&token=40db93d7-a31f-4ec3-961c-4d0572d9bb83" alt="image not found" />
     <img className="object-contain w-full h-full " src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/fotos%20carrousel%20sergio%20y%20cristina%2FIMG-20241201-WA0027.jpg?alt=media&token=e3d119ee-d050-4885-9495-740d1a9e5c06" alt="image not found" />
     <img className="object-contain w-full h-full " src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/fotos%20carrousel%20sergio%20y%20cristina%2FIMG-20241201-WA0028.jpg?alt=media&token=c19d378d-d2c8-407b-800f-9b9404f86264" alt="image not found" />
+    <img className="object-contain w-full h-full " src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/fotos%20carrousel%20sergio%20y%20cristina%2Ffotex1.jpg?alt=media&token=7d12cb15-c3ae-4715-8351-4e3d19f56b0b" alt="image not found" />
+    <img className="object-contain w-full h-full " src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/fotos%20carrousel%20sergio%20y%20cristina%2Ffotex2.jpg?alt=media&token=bd8a087c-6a4a-4623-bf4c-b4d73ed86648" alt="image not found" />
 </CarouselMulti>
  
     </div>
