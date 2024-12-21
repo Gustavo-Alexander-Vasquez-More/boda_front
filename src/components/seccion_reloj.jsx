@@ -46,9 +46,9 @@ export default function seccion_reloj() {
    )}
    <div className='w-full h-[70vh] relative overflow-hidden py-[2rem] flex  gap-4 lg:gap-0 justify-center items-center bg-cover bg-[url("https://images.unsplash.com/photo-1521478706270-f2e33c203d95?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHJlZ2FsbyUyMGRlJTIwYm9kYXN8ZW58MHx8MHx8fDA%3D")]'>
         <div className='w-full lg:w-[50%]  flex justify-center items-center'>
-          <div className='w-[90%] lg:w-[65%] lg:h-[60vh] bg-[#ffffff83]  flex flex-col gap-[2rem] justify-center items-center px-[1rem] lg:px-[4rem] py-[2rem]'>
+          <div className='w-[90%] lg:w-[65%] lg:h-[60vh] bg-[#ffffffbc]  flex flex-col gap-[2rem] justify-center items-center px-[1rem] lg:px-[4rem] py-[2rem]'>
             <p className='text-[#4A663E] pacifico text-[3rem]'>Regalos</p>
-            <p className='text-[black] pacifico text-center text-[1.1rem] lg:text-[1.5rem]'>"Tu presencia es lo más importante para nosotros. Sin embargo, si deseas hacernos un obsequio puedes hacerlo aquí."</p>
+            <p className='text-[black] pacifico text-center text-[1.3rem] lg:text-[1.5rem]'>"Tu presencia es lo más importante para nosotros. Sin embargo, si deseas hacernos un obsequio puedes hacerlo aquí."</p>
             <button onClick={openModal} className='bg-[#4A663E] z-40 text-white px-[2rem] py-[0.5rem] rounded-[10px] font-semibold montserrat'>Danos tu obsequio</button>
           </div>
         </div>
