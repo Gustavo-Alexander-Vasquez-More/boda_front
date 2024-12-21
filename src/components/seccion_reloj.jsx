@@ -44,41 +44,15 @@ export default function seccion_reloj() {
    {modal === true && (
     <Modal2 closeModal={closeModal}/>
    )}
-   <div className='w-full h-auto lg:h-screen relative overflow-hidden py-[2rem] flex lg:flex-row flex-col-reverse gap-4 lg:gap-0 justify-center items-center bg-cover ' style={{ backgroundImage: `url(${background})` }}>
+   <div className='w-full h-[70vh] relative overflow-hidden py-[2rem] flex  gap-4 lg:gap-0 justify-center items-center bg-cover bg-[url("https://images.unsplash.com/photo-1521478706270-f2e33c203d95?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHJlZ2FsbyUyMGRlJTIwYm9kYXN8ZW58MHx8MHx8fDA%3D")]'>
         <div className='w-full lg:w-[50%]  flex justify-center items-center'>
-          <div className='w-[90%] lg:w-[65%] lg:h-[60vh] bg-[#869A98]  flex flex-col gap-[2rem] justify-center items-center px-[1rem] lg:px-[4rem] py-[2rem]'>
-            <p className='text-white pacifico text-[3rem]'>Regalos</p>
-            <p className='text-white pacifico text-center text-[0.9rem] lg:text-[1.2rem]'>"Tu presencia es lo más importante para nosotros. Sin embargo, si deseas hacer una contribución para ayudarnos a hacer este día aún más especial, lo agradeceremos profundamente."</p>
-            <button onClick={openModal} className='bg-[#C4C599] z-40 text-white px-[2rem] py-[0.5rem] rounded-[10px] font-semibold montserrat'>Aportar algo especial</button>
+          <div className='w-[90%] lg:w-[65%] lg:h-[60vh] bg-[#ffffff83]  flex flex-col gap-[2rem] justify-center items-center px-[1rem] lg:px-[4rem] py-[2rem]'>
+            <p className='text-[#4A663E] pacifico text-[3rem]'>Regalos</p>
+            <p className='text-[black] pacifico text-center text-[1.1rem] lg:text-[1.5rem]'>"Tu presencia es lo más importante para nosotros. Sin embargo, si deseas hacernos un obsequio puedes hacerlo aquí."</p>
+            <button onClick={openModal} className='bg-[#4A663E] z-40 text-white px-[2rem] py-[0.5rem] rounded-[10px] font-semibold montserrat'>Danos tu obsequio</button>
           </div>
         </div>
-        <div className='lg:w-[50%] h-auto lg:h-screen'>
-        <div className=' h-[47vh] lg:h-[85vh] flex justify-center lg:items-center'>
-            <div className='absolute w-full h-[47vh] lg:h-[85vh]  flex  justify-center bg-contain bg-center bg-no-repeat bg-[url("https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/acf5f505-6bc8-4565-a189-2990c9cd856c.png?alt=media&token=7fd31734-19c6-43ca-acc7-a08d526fec33")]'>
-                <div className=' flex flex-col pt-[4rem]  lg:pt-[7rem] items-center'>
-                    <p className='top-[120%] left-[40.5%] text-[3rem] lg:text-[5rem] pacifico text-[#4A663E]'>Faltan</p>
-                    <div className='flex justify-center text-center gap-1.5 lg:gap-5'>
-                        <div className='text-center border-r-[1px] border-solid border-[#4A663E] pr-[1rem]'>
-                            <div className='lg:text-[3.5rem] text-[1rem] calendar text-[#8B9360]'>{timeLeft.days}</div>
-                            <div className='lg:text-[1.2rem] text-center text-[0.8rem] font-bold calendar text-[#4A663E]'>Días</div>
-                        </div>
-                        <div className='text-center border-r-[1px] border-solid border-[#4A663E] pr-[1rem]'>
-                            <div className='lg:text-[3.5rem] text-[1rem] calendar text-[#8B9360]'>{timeLeft.hours.toString().padStart(2, '0')}</div>
-                            <div className='lg:text-[1.2rem] text-center text-[0.8rem] font-bold calendar text-[#4A663E]'>Horas</div>
-                        </div>
-                        <div className='text-center border-r-[1px] border-solid border-[#4A663E] pr-[1rem]'>
-                            <div className='lg:text-[3.5rem] text-[1rem] calendar text-[#8B9360]'>{timeLeft.minutes.toString().padStart(2, '0')}</div>
-                            <div className='lg:text-[1.2rem] text-center text-[0.8rem] font-bold calendar text-[#4A663E]'>Minutos</div>
-                        </div>
-                        <div className='text-center'>
-                            <div className='lg:text-[3.5rem] text-[1rem] calendar text-[#8B9360]'>{timeLeft.seconds.toString().padStart(2, '0')}</div>
-                            <div className='lg:text-[1.2rem] text-center text-[0.8rem] font-bold calendar text-[#4A663E]'>Segundos</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
+        
     </div>
    </>
 );}

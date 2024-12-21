@@ -31,7 +31,7 @@ export default function SeccionBienvenida({ escuchar }) {
           {/* Corazón animado */}
           <div className="heart"></div>
           {/* Texto debajo del corazón */}
-          <p className="text-black text-2xl font-bold mt-4 pacifico">ModerInvitation</p>
+          <p className="text-black text-2xl font-bold mt-4 pacifico">ModernInvitation</p>
         </div>
       )}
 
@@ -57,13 +57,11 @@ export default function SeccionBienvenida({ escuchar }) {
 
         {/* Contenido del texto */}
         <div className="relative flex flex-col items-center px-[1rem] text-center text-white z-10">
-          <p className="montserrat text-[2rem] text-center lg:text-[3rem] font-semibold">
-            Te invitamos a nuestra boda
+          
+          <p className="elegant text-[3.5rem] lg:text-[5rem] font-semibold">
+            Nos casamos!
           </p>
-          <p className="elegant text-[2rem] lg:text-[5rem] font-semibold">
-            Sergio & Cristina
-          </p>
-          <p className="elegant text-[1.5rem] lg:text-[2.5rem] font-semibold">¡Nos casamos!</p>
+         
           <button
             onClick={escuchar}
             className="bg-[black] montserrat rounded-[10px] py-[0.5rem] text-[1rem] lgtext-[1.2rem] mt-[2rem] px-[1rem]"

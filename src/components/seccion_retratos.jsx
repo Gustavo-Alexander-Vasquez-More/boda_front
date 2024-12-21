@@ -22,10 +22,14 @@ export default function seccion_retratos({deslizar_dress}) {
       }};
     
   return (
-    <div className='w-full h-screen  flex justify-center items-center bg-cover px-[1rem]'style={{ backgroundImage: `url(${background})` }}>
-        <div className=' flex flex-col w-full items-center gap-5 text-center'>
-        <p className='text-[2.7rem] lg:text-[2.5rem] text-[#4A663E] font-bold calendar pacifico'>Retratos de nuestra historia</p>
-        <p className='text-[1.3rem] lg:text-[1.5rem] text-[#8B9360]  calendar'>Un minuto, un segundo, un instante que queda en la eternidad</p>
+    <div className='w-full h-screen  flex justify-center items-center bg-cover px-[1rem]' style={{ backgroundImage: `url(${background})` }}>
+        <div className=' flex flex-col w-full items-center gap-[2rem] lg:gap-[4rem] text-center'>
+        <div className='flex lg:flex-row flex-col items-center text-center text-[3.5rem] lg:text-[5rem] lg:gap-3'>
+        <p className=' text-[#4A663E] font-bold calendar pacifico'>Sergio</p>
+        <p className=' text-[#4A663E] font-bold calendar pacifico'>& </p>
+        <p className=' text-[#4A663E] font-bold calendar pacifico'>Cristina</p>
+        </div>
+        
         <CarouselMulti responsive={responsive} className="lg:w-[40%] w-[90%] h-[35vh] lg:h-[60vh]" autoPlay infinite={true}>
     
     <img className="object-contain w-full h-full " src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/fotos%20carrousel%20sergio%20y%20cristina%2FIMG-20241201-WA0012.jpg?alt=media&token=dff93569-2bae-4476-91dd-c7af9279e30b" alt="image not found" />

@@ -9,6 +9,7 @@ import Modal2 from '../components/modal2';
 import Seccion_padres from '../components/seccion_padres';
 import Seccion_dress_code from '../components/seccion_dress_code';
 import { animateScroll as scroll } from 'react-scroll';
+import Confirmacion from '../components/confirmacion';
 import Footer from '../components/footer';
 export default function template() {
 const [modal, setModal]=useState(false)
@@ -92,11 +93,12 @@ return (
 {/* ESTO ES PARA PC */}
   <div className='w-full h-auto flex flex-col '>
     <Seccion_bienvenida  escuchar={escuchar} quitar={quitar}/>
-    <Seccion_padres deslizar_crono={deslizar_crono}/>
-    <Seccion_fiesta deslizar_retrato={deslizar_retrato}/>
     <Seccion_retratos deslizar_dress={deslizar_dress}/>
     <Seccion_dress_code deslizar_reloj={deslizar_reloj}/>
+    <Seccion_padres deslizar_crono={deslizar_crono}/>
+    <Seccion_fiesta deslizar_retrato={deslizar_retrato}/>
     <Seccion_reloj/>
+    <Confirmacion/>
    <Footer/>
   </div>
   </>
