@@ -15,26 +15,26 @@ export default function seccion_fiesta({deslizar_retrato}) {
   {/* Encabezado de la Ceremonia Matrimonial */}
   <thead className="w-full">
     <tr className="w-full text-center">
-      <th colSpan="2" className="p-4 bg-[#869A98] lg:text-[2rem] text-white border-b border-[white] pacifico">Dirección</th>
+      <th colSpan="2" className="p-4 bg-[#869A98] lg:text-[2rem] text-[1.3rem] text-white border-b border-[white] pacifico">Dirección</th>
     </tr>
   </thead>
   <tbody>
     <tr className="border-b border-[white] px-[1rem]">
-      <td className="montserrat font-semibold text-center py-2 lg:text-[1rem] text-[0.8rem] lg:py-4">Stephenson #5478  Quinta la marianita-MORENO BA</td>
+      <td className="montserrat font-semibold text-center py-2 lg:text-[1rem] text-[1.1rem] lg:py-4">Stephenson #5478  Quinta la marianita-MORENO BA</td>
     </tr>
   </tbody>
   
   {/* Encabezado de Recepcion */}
   <thead className="w-full">
     <tr className="w-full text-center">
-      <th colSpan="2" className="p-4 bg-[#869A98] lg:text-[2rem] pacifico text-white border-b border-[white]">Hora y fecha</th>
+      <th colSpan="2" className="p-4 bg-[#869A98] text-[1.3rem] lg:text-[2rem] pacifico text-white border-b border-[white]">Hora y fecha</th>
     </tr>
   </thead>
   <tbody>
     
     <tr className="text-center w-full flex justify-center ">
-      <td className="py-2 lg:py-4 w-full text-[0.9rem] lg:text-[1.2rem] elegant font-semibold">17:00 Hs</td>
-      <td className="py-2 lg:py-4 w-full text-[0.9rem] lg:text-[1.2rem] elegant font-semibold">08 . 03 . 2025</td>
+      <td className="py-2 lg:py-4 w-full text-[1.1rem] lg:text-[1.2rem] elegant font-semibold">17:00 Hs</td>
+      <td className="py-2 lg:py-4 w-full text-[1.1rem] lg:text-[1.2rem] elegant font-semibold">08 . 03 . 2025</td>
     </tr>
   </tbody>
 </table>
