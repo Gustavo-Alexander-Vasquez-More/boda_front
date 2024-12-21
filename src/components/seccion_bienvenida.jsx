@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 export default function SeccionBienvenida({ escuchar }) {
   const [isLoading, setIsLoading] = useState(true); // Controla si se muestra el Splash Screen
   const [isImageLoaded, setIsImageLoaded] = useState(false); // Controla si la imagen ha terminado de cargar
-
+ 
   // Establecer un temporizador para garantizar 2 segundos de Splash Screen
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -64,7 +64,7 @@ export default function SeccionBienvenida({ escuchar }) {
          
           <button
             onClick={escuchar}
-            className="bg-[black] montserrat rounded-[10px] py-[0.5rem] text-[1rem] lgtext-[1.2rem] mt-[2rem] px-[1rem]"
+            className="bg-[black] montserrat rounded-[10px] py-[0.5rem] text-[1rem] lg:text-[1.5rem] mt-[2rem] px-[1rem]"
           >
             Ver la invitación
           </button>

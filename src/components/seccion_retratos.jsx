@@ -22,15 +22,15 @@ export default function seccion_retratos({deslizar_dress}) {
       }};
     
   return (
-    <div className='w-full h-screen  flex justify-center items-center bg-cover px-[1rem]' style={{ backgroundImage: `url(${background})` }}>
+    <div className='w-full h-[85vh] flex justify-center items-center bg-cover px-[1rem]' style={{ backgroundImage: `url(${background})` }}>
         <div className=' flex flex-col w-full items-center gap-[2rem] lg:gap-[4rem] text-center'>
-        <div className='flex lg:flex-row flex-col items-center text-center text-[3.5rem] lg:text-[5rem] lg:gap-3'>
+        <div className='flex lg:flex-row flex-col items-center text-center text-[3rem] lg:text-[5rem] lg:gap-3'>
         <p className=' text-[#4A663E] font-bold calendar pacifico'>Sergio</p>
         <p className=' text-[#4A663E] font-bold calendar pacifico'>& </p>
         <p className=' text-[#4A663E] font-bold calendar pacifico'>Cristina</p>
         </div>
         
-        <CarouselMulti responsive={responsive} className="lg:w-[40%] w-[90%] h-[35vh] lg:h-[60vh]" autoPlay infinite={true}>
+        <CarouselMulti responsive={responsive} className="lg:w-[30%] w-[90%] h-[35vh] lg:h-[45vh]" autoPlay infinite={true}>
     
     <img className="object-contain w-full h-full " src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/fotos%20carrousel%20sergio%20y%20cristina%2FIMG-20241201-WA0012.jpg?alt=media&token=dff93569-2bae-4476-91dd-c7af9279e30b" alt="image not found" />
     <img className="object-contain w-full h-full " src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/fotos%20carrousel%20sergio%20y%20cristina%2FIMG-20241201-WA0014.jpg?alt=media&token=ff4ed7b9-8441-43f8-99ec-ace0ca2dbf02" alt="image not found" />
@@ -40,12 +40,7 @@ export default function seccion_retratos({deslizar_dress}) {
     <img className="object-contain w-full h-full " src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/fotos%20carrousel%20sergio%20y%20cristina%2FIMG-20241201-WA0027.jpg?alt=media&token=e3d119ee-d050-4885-9495-740d1a9e5c06" alt="image not found" />
     <img className="object-contain w-full h-full " src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/fotos%20carrousel%20sergio%20y%20cristina%2FIMG-20241201-WA0028.jpg?alt=media&token=c19d378d-d2c8-407b-800f-9b9404f86264" alt="image not found" />
 </CarouselMulti>
-
-<button onClick={deslizar_dress} className='bg-[#808080ca] rounded-full p-2 flex lg:hidden'>
-          <svg class="w-8 h-8 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/>
-          </svg>
-      </button> 
+ 
     </div>
     </div>
   );

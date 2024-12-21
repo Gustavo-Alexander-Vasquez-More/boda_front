@@ -15,10 +15,12 @@ export default function template() {
 const [modal, setModal]=useState(false)
 const [modal2, setModal2]=useState(false)
 const [sound, setSound]=useState(false)
+ const [scrolly, setScrolly]=useState(false)
 const audioRef = useRef(new Audio('https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/Aleluya%20cover%20-%20Leonard%20Cohen%20%20(%20Elver%20Saxofonista)%20-%20Elver%20%20Saxofonista%2012%20(youtube).mp3?alt=media&token=bb5039c7-9418-42ed-9929-4dcb8385048e'));
 
 
 const escuchar = () => {
+  setScrolly(true)
   // Ajusta el volumen directamente aquí (valor entre 0 y 1)
   audioRef.current.volume = 0.3; // 30% de volumen
   audioRef.current.play();
@@ -52,7 +54,7 @@ const deslizar_retrato = () => {
 };
 const deslizar_dress = () => {
   // Desplazamiento suave hacia 101vh usando animateScroll
-  scroll.scrollTo(window.innerHeight * 4.00, {
+  scroll.scrollTo(window.innerHeight * 2.00, {
     duration: 800, // Duración del desplazamiento en milisegundos
     delay: 0, // Retraso antes de que comience el desplazamiento
     smooth: 'easeInOutQuart', // Tipo de suavizado
@@ -84,8 +86,19 @@ const openModal2 = () => {
   const closeModal2=()=>{
     setModal2(false)
   }
-
-    
+useEffect(() => {
+ 
+  if (scrolly === false &&  window.scrollY === 0 ) {
+    // Bloquear el scroll
+    document.body.style.overflow = 'hidden';
+  } if(scrolly === false && window.scrollY != 0) {
+    // Desbloquear el scroll
+    document.body.style.overflow = 'auto';
+  }if(scrolly === true ) {
+    // Desbloquear el scroll
+    document.body.style.overflow = 'auto';
+  }
+}, [scrolly]);
 return (
 <>
 {modal && <ModalDressCode closeModal={closeModal}/>}
