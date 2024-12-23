@@ -3,8 +3,9 @@ import background from '../images/plantilla.png'
 import marco from '../images/marco.png'
 export default function seccion_padres({deslizar_crono}) {
   return (
-    <div className='w-full h-[95vh] lg:h-screen relative px-[1.5rem] lg:px-0 gap-[1rem]  lg:gap-5 flex-col flex justify-center items-center '>
-        <img className='w-full h-[95vh] lg:h-screen bg-cover lg:bg-contain bg-no-repeat absolute' src="https://png.pngtree.com/background/20230502/original/pngtree-wedding-invitation-card-with-watercolor-green-leaves-vector-picture-image_2500071.jpg" alt="" />
+    <div className='w-full h-auto py-[2rem] lg:py-[5rem] relative px-[1.5rem] lg:px-0 gap-[1rem] lg:gap-5 flex-col flex justify-center bg-no-repeat items-center' 
+    style={{ backgroundImage: 'url("https://png.pngtree.com/background/20230502/original/pngtree-wedding-invitation-card-with-watercolor-green-leaves-vector-picture-image_2500071.jpg")', backgroundSize: '100% 100%' }}>
+        {/* <img className='w-full h-[95vh] lg:h-screen bg-cover lg:bg-contain bg-no-repeat absolute' src="g" alt="" /> */}
         <div className='text-[2rem]  lg:text-[3.5rem] z-50 text-[#4A663E] text-center pacifico font-semibold flex flex-col'>
         <p className=''>Con la bendición de  Dios</p>
         <p >y</p>
@@ -40,10 +41,11 @@ export default function seccion_padres({deslizar_crono}) {
 </svg> Carlos Meza</p>
           </div>
         </div>
-        <button onClick={deslizar_crono} className='bg-[#808080ca] rounded-full p-2 flex lg:hidden'>
-          <svg class="w-8 h-8 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+        <button  className=' rounded-full p-2 flex flex-col items-center lg:hidden'>
+          <svg class="w-8 h-8 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/>
           </svg>
+          <p className='text-[0.8rem] font-semibold'>Sigue bajando</p>
       </button>
     </div>
   );

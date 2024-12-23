@@ -39,7 +39,12 @@ export default function seccion_fiesta({deslizar_retrato}) {
   </tbody>
 </table>
 <p className='text-[0.9rem] text-white font-bold flex gap-2 text-center'>No sabés como llegar?<a target='_blank' href='https://maps.app.goo.gl/um7eoNg8Gn3p5bdS6' className="underline">Abrir google maps</a></p>
-
+<button  className=' rounded-full  flex flex-col items-center lg:hidden'>
+          <svg class="w-8 h-8 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/>
+          </svg>
+          <p className='text-[0.8rem] text-white font-semibold'>Sigue bajando</p>
+      </button>
       </div>
     </div>
    </>

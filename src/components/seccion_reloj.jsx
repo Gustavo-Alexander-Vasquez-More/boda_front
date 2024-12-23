@@ -44,7 +44,7 @@ export default function seccion_reloj() {
    {modal === true && (
     <Modal2 closeModal={closeModal}/>
    )}
-   <div className='w-full h-[80vh] relative overflow-hidden py-[2rem] flex  gap-4 lg:gap-0 justify-center items-center bg-cover bg-[url("https://images.unsplash.com/photo-1521478706270-f2e33c203d95?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHJlZ2FsbyUyMGRlJTIwYm9kYXN8ZW58MHx8MHx8fDA%3D")]'>
+   <div className='w-full h-auto relative overflow-hidden py-[2rem] flex flex-col  gap-4 lg:gap-0 justify-center items-center bg-cover bg-[url("https://images.unsplash.com/photo-1521478706270-f2e33c203d95?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHJlZ2FsbyUyMGRlJTIwYm9kYXN8ZW58MHx8MHx8fDA%3D")]'>
         <div className='w-full lg:w-[50%]  flex justify-center items-center'>
           <div className='w-[90%] lg:w-[65%] lg:h-[60vh] bg-[#ffffffbc]  flex flex-col gap-[2rem] justify-center items-center px-[1rem] lg:px-[4rem] py-[2rem]'>
             <p className='text-[#4A663E] pacifico text-[3rem]'>Regalos</p>
@@ -52,7 +52,12 @@ export default function seccion_reloj() {
             <button onClick={openModal} className='bg-[#4A663E] z-40 text-white px-[2rem] py-[0.5rem] rounded-[10px] font-semibold montserrat'>Danos tu obsequio</button>
           </div>
         </div>
-        
+        <button  className=' rounded-full flex flex-col items-center lg:hidden'>
+          <svg class="w-8 h-8 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/>
+          </svg>
+          <p className='text-[0.8rem] font-bold'>Sigue bajando</p>
+      </button>
     </div>
    </>
 );}

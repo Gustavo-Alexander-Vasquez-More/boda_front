@@ -22,7 +22,7 @@ export default function seccion_retratos({deslizar_dress}) {
       }};
     
   return (
-    <div className='w-full h-[85vh] flex justify-center items-center bg-cover px-[1rem]' style={{ backgroundImage: `url(${background})` }}>
+    <div className='w-full lg:h-[85vh] py-[1rem] flex justify-center items-center bg-cover px-[1rem]' style={{ backgroundImage: `url(${background})` }}>
         <div className=' flex flex-col w-full items-center gap-[2rem] lg:gap-[4rem] text-center'>
         <div className='flex lg:flex-row flex-col items-center text-center text-[3rem] lg:text-[5rem] lg:gap-3'>
         <p className=' text-[#4A663E] font-bold calendar pacifico'>Sergio</p>
@@ -42,7 +42,12 @@ export default function seccion_retratos({deslizar_dress}) {
     <img className="object-contain w-full h-full " src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/fotos%20carrousel%20sergio%20y%20cristina%2Ffotex1.jpg?alt=media&token=7d12cb15-c3ae-4715-8351-4e3d19f56b0b" alt="image not found" />
     <img className="object-contain w-full h-full " src="https://firebasestorage.googleapis.com/v0/b/boda-8ade5.appspot.com/o/fotos%20carrousel%20sergio%20y%20cristina%2Ffotex2.jpg?alt=media&token=bd8a087c-6a4a-4623-bf4c-b4d73ed86648" alt="image not found" />
 </CarouselMulti>
- 
+<button  className=' rounded-full p-2 flex flex-col items-center lg:hidden'>
+          <svg class="w-8 h-8 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/>
+          </svg>
+          <p className='text-[0.8rem] font-bold'>Sigue bajando</p>
+      </button>
     </div>
     </div>
   );
