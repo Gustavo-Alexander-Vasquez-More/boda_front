@@ -32,9 +32,9 @@ export default function seccion_fiesta({deslizar_retrato}) {
   </thead>
   <tbody>
     
-    <tr className="text-center w-full flex justify-center ">
-      <td className="py-2 lg:py-4 w-full text-[1.1rem] lg:text-[1.2rem] elegant font-semibold">17:00 Hs</td>
-      <td className="py-2 lg:py-4 w-full text-[1.1rem] lg:text-[1.2rem] elegant font-semibold">08 . 03 . 2025</td>
+    <tr className="text-center w-full flex justify-center  ">
+      <td className="py-2 lg:py-4 w-full text-[1.1rem] lg:text-[1.2rem] elegant font-bold">17:00 Hs</td>
+      <td className="py-2 lg:py-4 w-full text-[1.1rem] lg:text-[1.2rem] elegant font-bold">08 . 03 . 2025</td>
     </tr>
   </tbody>
 </table>
