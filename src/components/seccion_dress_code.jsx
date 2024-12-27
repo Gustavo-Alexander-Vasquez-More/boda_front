@@ -7,7 +7,7 @@ export default function seccion_dress_code({deslizar_reloj}) {
       
         <div className='w-full z-50 flex justify-center  items-center'>
             <div className='w-[90%] lg:w-[60%] px-[2rem] py-[2rem] text-center bg-[#ffffffc6]'>
-              <p className='pacifico text-[1.3rem] lg:text-[2rem]'>Dios nos dio la oportunidad de conocernos y ahora nos da la oportunidad que después de 12 años de estar juntos , de vivir experiencias estamos listos para dar este paso y seguir caminando juntos de la mano, ante adversidades siempre prevaleció nuestro amor, hoy comprendemos que fueron pruebas en nuestras vidas. 
+              <p className='pacifico text-[1.3rem] lg:text-[2rem]'>Dios nos dio la oportunidad de conocernos y ahora nos da la oportunidad que después de 12 años de estar juntos , de vivir experiencias estamos listos para dar este paso y seguir caminando juntos de la mano, ante adversidades siempre prevaleció nuestro amor, hoy comprendemos que fueron pruebas. 
 Queremos unir nuestras vidas delante de Dios y deseamos que seas testigo de este día tan especial para nosotros.
 </p>
             </div>
